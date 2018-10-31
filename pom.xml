@@ -240,10 +240,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.10.3</version>
                 <configuration>
-                     <!-- The following doclint line is a temporary hack to avoid javadoc errors that
-                          appear following jdk-8.  Ultimately these warnings and errors should be resolved. -->
-                     <!-- <additionalparam>-Xdoclint:all</additionalparam> -->
-		     <docfilessubdirs>true</docfilessubdirs>
+		        <docfilessubdirs>true</docfilessubdirs>
                      <groups>
                          <group>
                              <title>JAXR API Documentation</title>
