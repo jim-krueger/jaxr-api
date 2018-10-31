@@ -20,7 +20,7 @@ import javax.xml.registry.*;
 import java.util.*;
 
 /**
- * This interface is used as a simple wrapper interface that associates a String with its Locale. The interface is needed in the InternationalString interface where a Collection of LocalizedString instances are kept. Each LocalizedString instance has a Locale and a String instance. 
+ * This interface is used as a simple wrapper interface that associates a String with its Locale. The interface is needed in the InternationalString interface where a Collection of LocalizedString instances are kept. Each LocalizedString instance has a Locale and a String instance.
  *
  * @see InternationalString
  * @author Farrukh S. Najmi
@@ -28,7 +28,7 @@ import java.util.*;
 public interface LocalizedString {
 
 	/**
-	 * The default name returned by getCharsetName if no other 
+	 * The default name returned by getCharsetName if no other
 	 * name has explicitly been set.
 	 */
 	public static final String DEFAULT_CHARSET_NAME = "UTF-8";
@@ -37,7 +37,7 @@ public interface LocalizedString {
 	 * Gets the canonical name for the charset for this object.
 	 * Must return the default charset when there is no charset name defined.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @see LocalizedString#DEFAULT_CHARSET_NAME
 	 * @return the character set name for the character set used by this object
@@ -50,19 +50,19 @@ public interface LocalizedString {
 	 * Get the Locale for this object.
 	 * Must return the default Locale when no Locale has been defined.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @see java.util.Locale#getDefault() 
+	 * @see java.util.Locale#getDefault()
 	 * @return the Locale used by this object
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
     Locale getLocale() throws JAXRException;
-	
+
     /**
      * Get the String value for this object.
 	 *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the value defined by this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -73,7 +73,7 @@ public interface LocalizedString {
     /**
      * Set the canonical name for the charset for this object.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param charsetName	the character set name for the character set used by this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -84,7 +84,7 @@ public interface LocalizedString {
     /**
      * Set the Locale for this object.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param locale 	the Locale used by this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -95,12 +95,12 @@ public interface LocalizedString {
     /**
      * Set the String value for the specified object.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param value	the value defined by this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
-    void setValue(String value) throws JAXRException;		
-	
+    void setValue(String value) throws JAXRException;
+
 }

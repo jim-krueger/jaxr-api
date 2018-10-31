@@ -22,9 +22,9 @@ import javax.xml.registry.infomodel.*;
 
 
 /**
- * This is the principal interface implemented by a JAXR provider.  
- * A registry client can get this interface from a Connection to a registry. 
- * It provides the methods that are used by the client to discover various capability 
+ * This is the principal interface implemented by a JAXR provider.
+ * A registry client can get this interface from a Connection to a registry.
+ * It provides the methods that are used by the client to discover various capability
  * specific interfaces implemented by the JAXR provider.
  *
  * @see Connection
@@ -35,12 +35,12 @@ public interface RegistryService {
     /**
      * Returns the CapabilityProfile for the JAXR provider.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-	 * @return the CapabilityProfile for a JAXR provider 
+	 * @return the CapabilityProfile for a JAXR provider
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{javax.xml.registry.CapabilityProfile}>
+     * @see javax.xml.registry.CapabilityProfile
      * @see LifeCycleManager
      */
     CapabilityProfile getCapabilityProfile() throws JAXRException;
@@ -49,12 +49,12 @@ public interface RegistryService {
     /**
      * Returns the BusinessLifeCycleManager object implemented by the JAXR provider.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the BusinessLifeCycleManager
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{javax.xml.registry.BusinessLifeCycleManager}>
+     * @see javax.xml.registry.BusinessLifeCycleManager
      * @see LifeCycleManager
      */
     BusinessLifeCycleManager getBusinessLifeCycleManager() throws JAXRException;
@@ -62,26 +62,25 @@ public interface RegistryService {
     /**
      * Returns the BusinessQueryManager object implemented by the JAXR provider.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the BusinessQueryManaer
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{BusinessQueryManager}>
-     * @directed
+     * @see BusinessQueryManager
      */
     BusinessQueryManager getBusinessQueryManager() throws JAXRException;
 
     /**
      * Returns the DeclarativeQueryManager object implemented by the JAXR provider.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the DeclarativeQueryManager
      * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws UnsupportedCapabilityException If the JAXR provider can not satisfy the request
      *
-     * @associates <{DeclarativeQueryManager}>
-     * @directed
+     * @see DeclarativeQueryManager
      */
     DeclarativeQueryManager getDeclarativeQueryManager() throws JAXRException, UnsupportedCapabilityException;
 
@@ -91,7 +90,7 @@ public interface RegistryService {
 	 * any subsequent calls to retrieve the Bulkresponse for the same requestId
 	 * should result in an InvalidRequestException.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param requestId	the id for a previous asynchronous request
 	 * @return the BulkResponse that contains the result for the specified request
@@ -102,29 +101,29 @@ public interface RegistryService {
 	BulkResponse getBulkResponse(String requestId) throws InvalidRequestException, JAXRException;
 
 
-    /** 
+    /**
      * Gets the default user-defined postal scheme for codifying the attributes of PostalAddress.
      *
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the ClassificationScheme that is the default postal scheme
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     */ 
-    public ClassificationScheme getDefaultPostalScheme()  throws JAXRException; 	
+     */
+    public ClassificationScheme getDefaultPostalScheme()  throws JAXRException;
 
-	/** 
-	 * Takes a String that is an XML request in a registry-specific 
-	 * format, sends the request to the registry, and returns a String that is 
-	 * the registry-specific XML response. 
+	/**
+	 * Takes a String that is an XML request in a registry-specific
+	 * format, sends the request to the registry, and returns a String that is
+	 * the registry-specific XML response.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param request	the registry-specific request in a String representation
 	 * @return the String that is the XML response in a registry-specific manner
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
-	 */ 
-	public String makeRegistrySpecificRequest(String request) throws JAXRException; 
+	 */
+	public String makeRegistrySpecificRequest(String request) throws JAXRException;
 }

@@ -21,18 +21,18 @@ import java.util.*;
 import javax.xml.registry.*;
 
 /**
- * The Versionable interface defines the behavior common to classes that 
- * are capable of creating versions of their instances. At present all 
- * RegistryEntry classes are required to implement the Versionable interface. 
+ * The Versionable interface defines the behavior common to classes that
+ * are capable of creating versions of their instances. At present all
+ * RegistryEntry classes are required to implement the Versionable interface.
  *
- * @see RegistryEntry 
- * @author Farrukh S. Najmi 
+ * @see RegistryEntry
+ * @author Farrukh S. Najmi
  */
 public interface Versionable {
     /**
-     * Gets the major revision number for this version of the Versionable object. 
+     * Gets the major revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the major version for this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -41,9 +41,9 @@ public interface Versionable {
     int getMajorVersion() throws JAXRException;
 
     /**
-     * Sets the major revision number for this version of the Versionable object. 
+     * Sets the major revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param majorVersion	the major version number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -52,9 +52,9 @@ public interface Versionable {
     void setMajorVersion(int majorVersion) throws JAXRException;
 
     /**
-     * Gets the minor revision number for this version of the Versionable object. 
+     * Gets the minor revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the minor version for this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -63,9 +63,9 @@ public interface Versionable {
     int getMinorVersion() throws JAXRException;
 
     /**
-     * Sets the minor revision number for this version of the Versionable object. 
+     * Sets the minor revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @param minorVersion	the minor version number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -74,9 +74,9 @@ public interface Versionable {
     void setMinorVersion(int minorVersion) throws JAXRException;
 
     /**
-     * Gets the user-specified revision number for this version of the Versionable object. 
+     * Gets the user-specified revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the user-defined version number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -85,9 +85,9 @@ public interface Versionable {
     String getUserVersion() throws JAXRException;
 
     /**
-     * Sets the user specified revision number for this version of the Versionable object. 
+     * Sets the user specified revision number for this version of the Versionable object.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @param userVersion	the user-defined version number
      * @throws JAXRException	If the JAXR provider encounters an internal error

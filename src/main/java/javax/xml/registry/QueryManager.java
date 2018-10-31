@@ -26,11 +26,11 @@ import javax.xml.registry.infomodel.*;
  */
 public interface QueryManager {
 
-    /** 
+    /**
      * Gets the RegistryObject specified by the Id and type of object.
      *
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param id is the id of the Key for a RegistryObject.
 	 * @param objectType is a constant definition from LifeCycleManager that specifies the type of object desired.
@@ -40,11 +40,11 @@ public interface QueryManager {
      */
     public RegistryObject getRegistryObject(String id, String objectType)  throws JAXRException;
 
-    /** 
-     * Gets the RegistryObject specified by the Id. 
+    /**
+     * Gets the RegistryObject specified by the Id.
      *
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param id	the id for the desired object
      * @return the RegistryObject, returned as its concrete type (e.g. Organization, User etc.).
@@ -53,12 +53,12 @@ public interface QueryManager {
      */
     public RegistryObject getRegistryObject(String id)  throws JAXRException;
 
-    /** 
-	 * Gets the specified RegistryObjects. 
+    /**
+	 * Gets the specified RegistryObjects.
 	 * The objects are returned as their concrete type (e.g. Organization, User etc.).
-	 * 
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 *
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param objectKeys	a Collection of Key objects for the desired objects
 	 * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
@@ -67,27 +67,27 @@ public interface QueryManager {
 	 */
     public BulkResponse getRegistryObjects(Collection objectKeys)  throws JAXRException;
 
-    /** 
-     * Gets the specified RegistryObjects. 
+    /**
+     * Gets the specified RegistryObjects.
      * The objects are returned as their concrete type (e.g. Organization, User etc.).
-     * 
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     *
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      *
      * @param objectKeys	a Collection of Key objects for the desired objects
-     * @param objectTypes	a Collection of String objects that allow filtering desired objects by their type 
+     * @param objectTypes	a Collection of String objects that allow filtering desired objects by their type
      * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
     public BulkResponse getRegistryObjects(Collection objectKeys, String objectTypes)  throws JAXRException;
 
-    /** 
-     * Gets the RegistryObjects owned by the caller. 
+    /**
+     * Gets the RegistryObjects owned by the caller.
      * The objects are returned as their concrete type (e.g. Organization, User etc.).
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -95,11 +95,11 @@ public interface QueryManager {
      */
     public BulkResponse getRegistryObjects()  throws JAXRException;
 
-    /** 
-     * Gets the RegistryObjects owned by the caller, that are of the specified type. 
+    /**
+     * Gets the RegistryObjects owned by the caller, that are of the specified type.
      * The objects are returned as their concrete type (e.g. Organization, User etc.).
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param objectType Is a constant that defines the type of object sought. See LifeCycleManager for constants for object types.
 	 * @see LifeCycleManager#ORGANIZATION
@@ -109,16 +109,16 @@ public interface QueryManager {
      */
     public BulkResponse getRegistryObjects(String objectType)  throws JAXRException;
 
-	
+
     /**
      * Returns the parent RegistryService that created this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the RegistryService created this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{javax.xml.registry.RegistryService}>
+     * @see javax.xml.registry.RegistryService
      */
     RegistryService getRegistryService() throws JAXRException;
 }

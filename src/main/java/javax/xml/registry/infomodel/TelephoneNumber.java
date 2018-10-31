@@ -21,14 +21,14 @@ import javax.xml.registry.*;
 /**
  * A simple re-usable entity class that defines attributes of a telephone number.
  *
- * @author Farrukh S. Najmi 
+ * @author Farrukh S. Najmi
  */
 public interface TelephoneNumber {
     /**
-     * Gets the country code. 
+     * Gets the country code.
      * Default is an empty String.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the country code
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -37,10 +37,10 @@ public interface TelephoneNumber {
     public String getCountryCode() throws JAXRException;
 
     /**
-     * Gets the area code. 
+     * Gets the area code.
      * Default is an empty String.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the area code
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -49,10 +49,10 @@ public interface TelephoneNumber {
     public String getAreaCode() throws JAXRException;
 
     /**
-     * Gets the telephone number suffix, not including the country or area code. 
+     * Gets the telephone number suffix, not including the country or area code.
      * Default is an empty String.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the telephone number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -64,7 +64,7 @@ public interface TelephoneNumber {
      * Gets the internal extension.
      * Default is an empty String.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the internal extension number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -76,7 +76,7 @@ public interface TelephoneNumber {
      * Gets the URL that can dial this number electronically.
      * Default is a NULL String.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the url
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -87,7 +87,7 @@ public interface TelephoneNumber {
     /**
      * The type of telephone number (for example, "fax"). Any String would do.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the type for this TelephoneNumber, which is an arbitrary String
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -98,7 +98,7 @@ public interface TelephoneNumber {
     /**
      * Sets country code.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param countryCode the country code
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -107,9 +107,9 @@ public interface TelephoneNumber {
     public void setCountryCode(String countryCode) throws JAXRException;
 
     /**
-     * Sets the area code. 
+     * Sets the area code.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param areaCode the area code
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -118,10 +118,10 @@ public interface TelephoneNumber {
     public void setAreaCode(String areaCode) throws JAXRException;
 
     /**
-     * Sets the telephone number suffix, not including the country or area code. 
+     * Sets the telephone number suffix, not including the country or area code.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
-     * 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
+     *
 	 * @param number	the telephone number
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
@@ -129,9 +129,9 @@ public interface TelephoneNumber {
     public void setNumber(String number) throws JAXRException;
 
     /**
-     * Sets the internal extension. 
+     * Sets the internal extension.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param extension	the internal extension number
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -142,8 +142,8 @@ public interface TelephoneNumber {
     /**
      * Sets the URL that can dial this number electronically.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
-     * 
+     * <DL><DT><B>Capability Level: 1 </B></DL>
+     *
 	 * @param url the URL string
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
@@ -153,7 +153,7 @@ public interface TelephoneNumber {
     /**
      * Sets the type of telephone number (for example, "fax"). Any String will do.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param type the type for this TelephoneNumber, which is an arbitrary String
      * @throws JAXRException	If the JAXR provider encounters an internal error

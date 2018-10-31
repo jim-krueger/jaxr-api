@@ -21,32 +21,32 @@ import java.util.*;
 import javax.xml.registry.*;
 
 /**
- * Slot instances provide a dynamic way to add arbitrary attributes to 
- * RegistryObject instances. This ability to add attributes dynamically 
- * to RegistryObject instances enables extensibility within the Registry 
- * Information Model. 
+ * Slot instances provide a dynamic way to add arbitrary attributes to
+ * RegistryObject instances. This ability to add attributes dynamically
+ * to RegistryObject instances enables extensibility within the Registry
+ * Information Model.
  * <p>
- * A RegistryObject may have 0 or more Slots. A slot is composed of a name, 
- * a slotType and a collection of values. The name of a slot is locally unique 
- * within the RegistryObject instance. Similarly, the value of a Slot is 
- * locally unique within a slot instance. Since a Slot represents an 
- * extensible attribute whose value may be a collection, a 
- * Slot is allowed to have a collection of values rather than a single value. 
+ * A RegistryObject may have 0 or more Slots. A slot is composed of a name,
+ * a slotType and a collection of values. The name of a slot is locally unique
+ * within the RegistryObject instance. Similarly, the value of a Slot is
+ * locally unique within a slot instance. Since a Slot represents an
+ * extensible attribute whose value may be a collection, a
+ * Slot is allowed to have a collection of values rather than a single value.
  * The slotType attribute may optionally specify a type or category for the slot.
  *
  * @see ExtensibleObject
- * @author Farrukh S. Najmi 
+ * @author Farrukh S. Najmi
  */
 public interface Slot {
 
 	/**
 	 * Gets the name for this Slot.
-	 * Default is a NULL String. 
-	 * 
+	 * Default is a NULL String.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
 	 *
-	 * @return the name 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
+	 *
+	 * @return the name
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
@@ -54,10 +54,10 @@ public interface Slot {
 
     /**
      * Sets the name for this Slot.
-     * Default is a NULL String. 
-     * 
+     * Default is a NULL String.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     *
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 @param name	the name
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -69,7 +69,7 @@ public interface Slot {
      * Gets the slotType for this Slot.
      * Default is a NULL String.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the slot type which is an arbitrary String
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -80,7 +80,7 @@ public interface Slot {
     /**
      * Sets the slotType for this Slot.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param slotType	the slot type which is an arbitrary String
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -91,10 +91,10 @@ public interface Slot {
     /**
      * Gets the values for this Slot.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	
-	 * 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
+	 *
      * @see java.lang.String
-     * @return Collection of String instances representing the values for this Slot. The Collection may be empty but not null.	 
+     * @return Collection of String instances representing the values for this Slot. The Collection may be empty but not null.
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      *
@@ -104,14 +104,14 @@ public interface Slot {
     /**
      * Sets the values for this Slot.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param values the values for this Slot
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
     public void setValues(Collection values) throws JAXRException;
-	
+
 	/**
 	 * Name for pre-defined Slot used in PostalAddress by JAXR UDDI provider.
 	 */
@@ -120,7 +120,7 @@ public interface Slot {
 	/**
 	 * Name for pre-defined Slot used in PostalAddress by JAXR UDDI provider.
 	 */
-	public static final String ADDRESS_LINES_SLOT = "addressLines";		
+	public static final String ADDRESS_LINES_SLOT = "addressLines";
 
 	/**
 	 * Name for pre-defined Slot used in Organization and ClassificationScheme by JAXR UDDI provider.

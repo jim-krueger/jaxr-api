@@ -20,56 +20,56 @@ import java.net.*;
 import java.util.*;
 import javax.xml.registry.*;
 
-/** 
- *  
- * ExternalLink instances model a named URI to content that may reside outside  
- * the registry.  
- * RegistryObject may be associated with any number of ExternalLinks to annotate  
- * a RegistryObject with external links to external content. 
- * <p> 
- * Consider the case where a Submitting Organization submits a repository item  
- * (e.g. a DTD) and wants to associate some external content to that object 
- * (e.g. the Submitting Organization's home page). The ExternalLink enables this  
- * capability.  
- * 
- * @see RegistryObject 
- * @author Farrukh S. Najmi    
+/**
+ *
+ * ExternalLink instances model a named URI to content that may reside outside
+ * the registry.
+ * RegistryObject may be associated with any number of ExternalLinks to annotate
+ * a RegistryObject with external links to external content.
+ * <p>
+ * Consider the case where a Submitting Organization submits a repository item
+ * (e.g. a DTD) and wants to associate some external content to that object
+ * (e.g. the Submitting Organization's home page). The ExternalLink enables this
+ * capability.
+ *
+ * @see RegistryObject
+ * @author Farrukh S. Najmi
  */
-public interface ExternalLink extends RegistryObject, URIValidator {    
+public interface ExternalLink extends RegistryObject, URIValidator {
 
-    /** 
-     * Gets the collection of RegistryObjects that are annotated by this 
-     * ExternalLink.     
-     *	 
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 	 
-     *	 
-     * @return Collection of RegistryObjects. Return an empty Collection if no RegistryObjects	 
-     * are annotated by this object.	 
-     * @throws JAXRException	If the JAXR provider encounters an internal error	 
-     *	 
-     */    
-    Collection getLinkedObjects() throws JAXRException;    
-     
-    /** 	 
-     * Gets URI to the an external resource.	 
-     * Default is a NULL String. 	 
-     *	 
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 	 
-     *	 
-     * @return	the URI String for this object (e.g. "http://java.sun.com") 	 
-     * @throws JAXRException	If the JAXR provider encounters an internal error	 
-     *	 
-     */    
-    String getExternalURI() throws JAXRException;    
-     
-    /** 	 
-     * Sets URI for an external resource. 	 
-     *	 
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 	 
-     *	 
-     * @param uri	the URI String for this object (e.g. "http://java.sun.com")	 
-     * @throws JAXRException	If the JAXR provider encounters an internal error	 
-     *	 
-     */ 
+    /**
+     * Gets the collection of RegistryObjects that are annotated by this
+     * ExternalLink.
+     *
+     * <DL><DT><B>Capability Level: 0 </B></DL>
+     *
+     * @return Collection of RegistryObjects. Return an empty Collection if no RegistryObjects
+     * are annotated by this object.
+     * @throws JAXRException	If the JAXR provider encounters an internal error
+     *
+     */
+    Collection getLinkedObjects() throws JAXRException;
+
+    /**
+     * Gets URI to the an external resource.
+     * Default is a NULL String.
+     *
+     * <DL><DT><B>Capability Level: 0 </B></DL>
+     *
+     * @return	the URI String for this object (e.g. "http://java.sun.com")
+     * @throws JAXRException	If the JAXR provider encounters an internal error
+     *
+     */
+    String getExternalURI() throws JAXRException;
+
+    /**
+     * Sets URI for an external resource.
+     *
+     * <DL><DT><B>Capability Level: 0 </B></DL>
+     *
+     * @param uri	the URI String for this object (e.g. "http://java.sun.com")
+     * @throws JAXRException	If the JAXR provider encounters an internal error
+     *
+     */
     void setExternalURI(String uri) throws JAXRException;
 }

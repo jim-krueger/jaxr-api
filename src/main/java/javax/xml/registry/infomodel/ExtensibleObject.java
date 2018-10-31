@@ -21,18 +21,18 @@ import java.util.*;
 import javax.xml.registry.*;
 
 /**
- * An ExtensibleObject is one that allows itself to be extended by utilizing 
- * dynamically added Slots that add arbitrary attributes to the object on a 
+ * An ExtensibleObject is one that allows itself to be extended by utilizing
+ * dynamically added Slots that add arbitrary attributes to the object on a
  * per instance basis.
- * 
+ *
  * @see Slot
- * @author Farrukh S. Najmi  
+ * @author Farrukh S. Najmi
  */
 public interface ExtensibleObject {
-    /** 
-	 * Adds a Slot to this object. 
+    /**
+	 * Adds a Slot to this object.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param slot	the Slot object being added to this object
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -44,23 +44,19 @@ public interface ExtensibleObject {
      *
      * Adds more Slots to this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param slots	the Collection of Slot objects being added to this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @supplierCardinality 0..*
-     * @associates <{Slot}>
-     * @undirected
-     * @supplierRole slots
-     * @link aggregationByValue
+     * @see Slot
      */
     void addSlots(Collection slots) throws JAXRException;
 
-    /** 
-	 * Removes a Slot from this object. The Slot is identified by its name. 
+    /**
+	 * Removes a Slot from this object. The Slot is identified by its name.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param slotName	the name for the Slot object being removed from this object
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -71,44 +67,37 @@ public interface ExtensibleObject {
     /**
      * Removes specified Slots from this object. The Slots are identified by its name.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param slotNames	the Collection of names for Slot objects being removed from this object. Must be a Collection of Strings
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @supplierCardinality 0..*
-     * @associates <{Slot}>
-     * @undirected
-     * @supplierRole slots
-     * @link aggregationByValue
+     * @see Slot
      */
     void removeSlots(Collection slotNames) throws JAXRException;
 
 	/**
 	 * Gets the slot specified by slotName.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param slotName the name of the desired Slot object
+     * @return Slot object retrieved
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	Slot getSlot(String slotName) throws JAXRException;
-	
+
     /**
      * Returns the Slots associated with this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-     * @return Collection of Slot instances. The Collection may be empty but not null.	 
+     * @return Collection of Slot instances. The Collection may be empty but not null.
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @supplierCardinality 0..*
-     * @associates <{Slot}>
-     * @undirected
-     * @supplierRole slots
-     * @link aggregationByValue
+     * @see Slot
      */
     Collection getSlots() throws JAXRException;
-	
+
 }
