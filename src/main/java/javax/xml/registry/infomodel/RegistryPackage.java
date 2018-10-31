@@ -21,7 +21,7 @@ import java.util.*;
 import javax.xml.registry.*;
 
 /**
- * RegistryPackage instances are RegistryEntries that group logically related 
+ * RegistryPackage instances are RegistryEntries that group logically related
  * RegistryEntries together.
  * A package may contain any number of RegistryObjects. A RegistryObject may be a member of any number of Packages.
  *
@@ -29,10 +29,10 @@ import javax.xml.registry.*;
  * @author Farrukh S. Najmi
  */
 public interface RegistryPackage extends RegistryEntry {
-	/** 
-	 * Adds a child RegistryObject as member. 
+	/**
+	 * Adds a child RegistryObject as member.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObject	the RegistryObject being added
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -40,10 +40,10 @@ public interface RegistryPackage extends RegistryEntry {
 	 */
 	void addRegistryObject(RegistryObject registryObject) throws JAXRException;
 
-	/** 
+	/**
 	 * Adds a Collection of RegistryObject children as members.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObjects	the Collection of RegistryObjects being added
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -51,10 +51,10 @@ public interface RegistryPackage extends RegistryEntry {
 	 */
 	void addRegistryObjects(Collection registryObjects) throws JAXRException;
 
-	/** 
-	 * Removes a child RegistryObject from membership. 
+	/**
+	 * Removes a child RegistryObject from membership.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObject	the RegistryObject being removed
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -62,10 +62,10 @@ public interface RegistryPackage extends RegistryEntry {
 	 */
 	void removeRegistryObject(RegistryObject registryObject) throws JAXRException;
 
-	/** 
+	/**
 	 * Removes a Collection of children RegistryObjects from membership.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObjects	the Collection of RegistryObject being removed
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -75,9 +75,9 @@ public interface RegistryPackage extends RegistryEntry {
 
     /**
      * Gets the collection of member RegistryObjects of this RegistryPackage.
-     * 	 	 
      *
-     * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+     *
+     * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the Set of RegistryObjects that are members of this object
      * @throws JAXRException	If the JAXR provider encounters an internal error

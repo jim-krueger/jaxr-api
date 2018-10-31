@@ -19,46 +19,46 @@ package javax.xml.registry.infomodel;
 import javax.xml.registry.*;
 
 /**
- * ExternalIdentifier instances provide the additional identifier information 
- * to RegistryObjects such as DUNS number, Social Security Number, or an alias 
- * name of the organization.  The attribute name inherited from RegistryObject is 
- * used to contain the identification scheme ("DUNS" "Social Security Number", etc.), 
- * and the attribute value contains the actual information (e.g. the actual DUNS number). 
+ * ExternalIdentifier instances provide the additional identifier information
+ * to RegistryObjects such as DUNS number, Social Security Number, or an alias
+ * name of the organization.  The attribute name inherited from RegistryObject is
+ * used to contain the identification scheme ("DUNS" "Social Security Number", etc.),
+ * and the attribute value contains the actual information (e.g. the actual DUNS number).
  * Each RegistryObject may have 0 or more ExternalIdentifiers.
  *
  * @see RegistryObject
- * @author Farrukh S. Najmi   
+ * @author Farrukh S. Najmi
  */
 public interface ExternalIdentifier extends RegistryObject {
 
-	/** 
+	/**
 	 * Gets the parent RegistryObject for this ExternalIdentifier.
 	 * To set the registryObject call addExternalIdentifier on a RegistryObject.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @see RegistryObject#addExternalIdentifier(ExternalIdentifier ei)
-	 * @return	the RegistryObject that this object identifies 
+	 * @return	the RegistryObject that this object identifies
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	RegistryObject getRegistryObject() throws JAXRException;
 
-	/** 
+	/**
 	 * Gets the value of an ExternalIdentifier.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return	the identification value defined by this object (e.g. a company's DUNS number)
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	public String getValue() throws JAXRException;
-	
-	/** 
+
+	/**
 	 * Sets the value of an ExternalIdentifier.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param value	the identification value defined by this object (e.g. a company's DUNS number)
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -70,22 +70,20 @@ public interface ExternalIdentifier extends RegistryObject {
      * Gets the ClassificationScheme that is used as the identification scheme
      * for identifying this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the ClassificationScheme that is used as the identification scheme (e.g. "DUNS")
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @supplierCardinality 0..*
-     * @clientCardinality 0..*
-     * @associationAsClass Classification
+     * @see Classification
      */
     ClassificationScheme getIdentificationScheme() throws JAXRException;
 
-    /** 
+    /**
      * Sets the ClassificationScheme that is used as the identification scheme
 	 * for identifying this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param identificationScheme	the ClassificationScheme that is used as the identification scheme (e.g. "DUNS")
      * @throws JAXRException	If the JAXR provider encounters an internal error

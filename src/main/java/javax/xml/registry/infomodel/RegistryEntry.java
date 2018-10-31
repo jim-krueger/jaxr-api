@@ -28,25 +28,25 @@ import javax.xml.registry.*;
  * @author Farrukh S. Najmi
  */
 public interface RegistryEntry extends RegistryObject, Versionable {
-    /** 
-	 * Gets the life cycle status of the RegistryEntry within the registry. 
+    /**
+	 * Gets the life cycle status of the RegistryEntry within the registry.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
 	 *
-	 * @See RegistryEntry#STATUS_SUBMITTED
+	 * @see RegistryEntry#STATUS_SUBMITTED
 	 *
 	 * @return the life cycle status as an integer enumeration
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
-    int getStatus() throws JAXRException;	
-                                     
-    /** 
-	 * Gets the stability indicator for the RegistryEntry within the Registry. 
-	 * The stability indicator is provided by the submitter as an indication 
+    int getStatus() throws JAXRException;
+
+    /**
+	 * Gets the stability indicator for the RegistryEntry within the Registry.
+	 * The stability indicator is provided by the submitter as an indication
 	 * of the level of stability for the content.
      *
-     * <p><DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL> 	 
+     * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
      *
 	 * @see RegistryEntry#STABILITY_DYNAMIC
 	 * @return the stability indicator as an integer enumeration
@@ -55,71 +55,65 @@ public interface RegistryEntry extends RegistryObject, Versionable {
      */
     int getStability() throws JAXRException;
 
-	/** 
+	/**
 	 * Sets the stability indicator for the RegistryEntry.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
 	 *
 	 * @param stability the stability indicator
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
-	 */	
+	 */
     void setStability(int stability) throws JAXRException;
 
-	
-	/** 
-	 * Gets expirationDate attribute of the RegistryEntry within the Registry. 
-	 * This attribute defines a time limit upon the stability indication 
-	 * provided by the stability attribute. Once the expirationDate has been 
-	 * reached the stability attribute in effect becomes STABILITY_DYNAMIC 
-	 * implying that content can change at any time and in any manner. 
-	 * A null value implies that there is no expiration on stability attribute. 
+
+	/**
+	 * Gets expirationDate attribute of the RegistryEntry within the Registry.
+	 * This attribute defines a time limit upon the stability indication
+	 * provided by the stability attribute. Once the expirationDate has been
+	 * reached the stability attribute in effect becomes STABILITY_DYNAMIC
+	 * implying that content can change at any time and in any manner.
+	 * A null value implies that there is no expiration on stability attribute.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
 	 *
 	 * @return the expiration Date for the stability indicator
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	Date getExpiration() throws JAXRException;
-	
-	/** 
-	 * Sets the expirationDate. 
+
+	/**
+	 * Sets the expirationDate.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param expiration	the expiration Date for the stability indicator
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	void setExpiration(Date expiration) throws JAXRException;
-	
+
 	/** RegistryEntry has been submitted. */
 	public static final int STATUS_SUBMITTED=0;
-	
+
 	/** RegistryEntry has been submitted and approved. */
 	public static final int STATUS_APPROVED=1;
-	
+
 	/** RegistryEntry has been deprecated. */
 	public static final int STATUS_DEPRECATED=2;
-	
+
 	/** RegistryEntry has been withdrawn by the submitter. */
 	public static final int STATUS_WITHDRAWN=3;
-	
+
 
 	/** RegistryEntry may change at any time. */
 	public static final int STABILITY_DYNAMIC=0;
-	
+
 	/** RegistryEntry may change at any time, however the changes will be backward compatible. */
 	public static final int STABILITY_DYNAMIC_COMPATIBLE=1;
-	
+
 	/** RegistryEntry will not change. */
 	public static final int STABILITY_STATIC=2;
-	
 
-    /**
-     * @link aggregationByValue
-     * @supplierCardinality 0..* 
-     */
-    /*#Slot lnkSlot;*/
 }

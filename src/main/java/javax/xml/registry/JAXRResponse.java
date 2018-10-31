@@ -20,7 +20,7 @@ package javax.xml.registry;
  * A JAXR requests' response.
  *
  * @see JAXRException
- * @author Farrukh S. Najmi  
+ * @author Farrukh S. Najmi
  */
 public interface JAXRResponse {
 
@@ -43,23 +43,23 @@ public interface JAXRResponse {
 	 * Status indicating that the results are currently unavailable.
 	 */
 	public static final int STATUS_UNAVAILABLE=3;
-	
+
 	/**
 	 * Returns the unique id for the request that generated this response.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the request id
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	String getRequestId() throws JAXRException;
-	
-	
+
+
 	/**
 	 * Returns the status for this response.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @see JAXRResponse#STATUS_SUCCESS
 	 * @return the status which is an integer enumerated value
@@ -67,12 +67,12 @@ public interface JAXRResponse {
 	 *
 	 */
 	public int getStatus() throws JAXRException;
-	
+
 	/**
 	 * Returns true if a response is available, false otherwise.
 	 * This is a polling method and must not block.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL> 	 
 	 *
 	 * @return <code>true</code> if the response is available; <code>false</code> otherwise
 	 * @throws JAXRException	If the JAXR provider encounters an internal error

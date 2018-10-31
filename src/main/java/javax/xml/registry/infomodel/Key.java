@@ -28,25 +28,25 @@ public interface Key {
 
 	/**
 	 * Returns the unique Id of this key.
-	 * Default is a NULL String. 
+	 * Default is a NULL String.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the id for this object
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
     public String getId() throws JAXRException;
-	
+
 	/**
 	 * Sets the unique id associated with this key.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param id	the id being defined for this object
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
     public void setId(String id) throws JAXRException;
-	
+
 }

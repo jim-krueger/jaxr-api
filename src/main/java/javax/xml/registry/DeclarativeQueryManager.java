@@ -29,15 +29,16 @@ public interface DeclarativeQueryManager extends QueryManager {
 	/**
 	 * Creates a Query object given a queryType (for example, QUERY_TYPE_SQL) and a String
 	 * that represents a query in the syntax appropriate for queryType.
-	 * 
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 *
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @see Query#QUERY_TYPE_SQL
 	 * @see Query#QUERY_TYPE_XQUERY
 	 * @see Query#QUERY_TYPE_EBXML_FILTER_QUERY
 	 * @param queryType	the type of query
 	 * @param queryString	the query in its string representation
+	 * @return Query object created
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 * @throws InvalidRequestException	If the JAXR provider validates query syntax (optional) and the sqlQuery is not valid
 	 *
@@ -47,7 +48,7 @@ public interface DeclarativeQueryManager extends QueryManager {
 	/**
 	 * Executes a query as specified by query parameter.
 	 *
-	 * <p><DL><DT><B>Capability Level: 1 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param query	the query to be executed
 	 * @return the BulkResponse that is the result of the query
@@ -57,7 +58,7 @@ public interface DeclarativeQueryManager extends QueryManager {
 	public BulkResponse executeQuery(Query query) throws JAXRException;
 
 
-    /** @link dependency 
+    /** @link dependency
      * @label processes*/
     /*#Query lnkQuery;*/
 }

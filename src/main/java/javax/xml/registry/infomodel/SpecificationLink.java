@@ -21,7 +21,7 @@ import javax.xml.registry.*;
 import java.util.*;
 
 /**
- * A SpecificationLink provides the linkage between a ServiceBinding and one of its technical specifications that describes how to use the service using the ServiceBinding. For example, a ServiceBinding may have a SpecificationLink instance that describes how to access the service using a technical specification in the form of a WSDL document or a CORBA IDL document. 
+ * A SpecificationLink provides the linkage between a ServiceBinding and one of its technical specifications that describes how to use the service using the ServiceBinding. For example, a ServiceBinding may have a SpecificationLink instance that describes how to access the service using a technical specification in the form of a WSDL document or a CORBA IDL document.
  * It serves the same purpose as the union of the tModelInstanceInfo and instanceDetails structures in
  * UDDI.
  *
@@ -32,25 +32,23 @@ public interface SpecificationLink extends RegistryObject {
     /**
      * Gets the specification object for this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL>
+     * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @return the RegistryObject that is the specification object. 
+	 * @return the RegistryObject that is the specification object.
      * 	For a UDDI provider the specification object must be a Concept with no parent.
      * 	For an ebXML provider it is likely to be an ExtrinsicObject.
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{RegistryObject}>
-     * @supplierCardinality 1
-     * @directed 
+     * @see RegistryObject
      */
     RegistryObject getSpecificationObject() throws JAXRException;
 
     /**
      * Sets the specification object for this object.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-     * @param obj the RegistryObject that is the specification object. 
+     * @param obj the RegistryObject that is the specification object.
      * 	For a UDDI provider the specification object must be a Concept with no parent.
      * 	For an ebXML provider it is likely to be an ExtrinsicObject.
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -62,9 +60,9 @@ public interface SpecificationLink extends RegistryObject {
      * Gets the description of usage parameters.
 	 * Default is an empty String.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-	 * 
+	 *
      * @return the usage description for this object, which must not be null
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
@@ -74,7 +72,7 @@ public interface SpecificationLink extends RegistryObject {
     /**
      * Sets  the description of usage parameters.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param usageDescription the description of usage parameters for this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -87,9 +85,9 @@ public interface SpecificationLink extends RegistryObject {
 	 * that describes how to use the technical specification accessed via this
 	 * SpecificationLink. Each parameter is a String.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @return the Collection of String instances. The Collection may be empty but not null.	 
+	 * @return the Collection of String instances. The Collection may be empty but not null.
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
      */
@@ -98,7 +96,7 @@ public interface SpecificationLink extends RegistryObject {
     /**
      * Sets any usage parameters. Each parameter is a String
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param usageParameters the Collection of usage parameter Strings
      * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -110,7 +108,7 @@ public interface SpecificationLink extends RegistryObject {
 	/**
 	 * Gets the parent ServiceBinding for this SpecificationLink.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the parent ServiceBinding within which this object is composed
 	 * @throws JAXRException	If the JAXR provider encounters an internal error

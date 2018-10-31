@@ -21,19 +21,19 @@ package javax.xml.registry;
  * registry providers. This interface is used in support of the distributed
  * query feature of the JAXR API.
  *
- * 
+ *
  * @author Farrukh S. Najmi
  */
 public interface FederatedConnection extends Connection {
     /**
      * Gets the RegistryService interface associated with the Connection.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      * @associates <{RegistryService}>
      * @see RegistryService
      */
-	/*#RegistryService getRegistryService() throws JAXRException;*/  
+	/*#RegistryService getRegistryService() throws JAXRException;*/
 }

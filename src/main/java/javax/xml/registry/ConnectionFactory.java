@@ -24,7 +24,7 @@ import java.io.*;
  * A JAXR ConnectionFactory object is configured in a provider-specific way to create connections with registry providers.
  *
  * <h2>Looking Up a ConnectionFactory Using the JNDI API</h2>
- * The preferred way for a client to look up a JAXR ConnectionFactory is within the Java Naming and Directory Interface<sup><font size="-2">TM</font></sup> (JNDI) API.
+ * The preferred way for a client to look up a JAXR ConnectionFactory is within the Java Naming and Directory Interface<sup>TM</sup> (JNDI) API.
  * A ConnectionFactory object is registered with a naming service in a provider specific way, such as one based on the JNDI API. This registration associates the ConnectionFactory object with a logical name. When an application wants to establish a connection with the provider associated with that ConnectionFactory object, it does a lookup, providing the logical name. The application can then use the ConnectionFactory object that is returned to create a connection to the messaging provider.
  *
  * <h2>Looking Up a ConnectionFactory Without Using the JNDI API</h2>
@@ -36,13 +36,13 @@ import java.io.*;
  * @author Farrukh S. Najmi
  */
 public abstract class ConnectionFactory {
-    
-    
+
+
     /**
      * Sets the Properties used during createConnection
      * and createFederatedConnection calls.
-     * <p>
-     * <DD><DL>
+     *
+     * <DL>
      * <DT>
      * <B>Standard Connection Properties:</B>
      * <DD><CODE>javax.xml.registry.queryManagerURL</CODE> - URL String for the query manager service within the target registry provider
@@ -52,7 +52,7 @@ public abstract class ConnectionFactory {
      * <DD><CODE>javax.xml.registry.uddi.maxRows</CODE> - integer that specifies the maximum number of rows to be returned for find operations. This property is specific for UDDI providers
      * <DD><CODE>javax.xml.registry.postalAddressScheme</CODE> - String that specifies the id of a ClassificationScheme that is used as the default postal address scheme for this connection
      * </DL>
-     * <p><DL><DT><B>Capability Level: 0 </B></DL>
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param properties configuration properties that are either
      * 	specified by JAXR specification or are provider specific.
@@ -60,39 +60,37 @@ public abstract class ConnectionFactory {
      *
      */
     public abstract void setProperties(Properties properties) throws JAXRException;
-    
+
     /**
      * Gets the Properties used during createConnection
      * and createFederatedConnection calls.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL>
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the Properties defined for this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
     public abstract Properties getProperties() throws JAXRException;
-    
-    
+
+
     /**
      * Create a named connection. Such a connection can be used to
      * communicate with a JAXR provider.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL>
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the Connection created by this call
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @link dependency
-     * @label creates
-     * @associates <{Connection}>
+     * @see javax.xml.registry.Connection
      */
     public abstract Connection createConnection() throws JAXRException;
-    
+
     /**
      * Create a FederatedConnection.
      *
-     * <p><DL><DT><B>Capability Level: 0 (optional) </B></DL>
+     * <DL><DT><B>Capability Level: 0 (optional) </B></DL>
      *
      * @param connections Is a Collection of Connection objects. Note that
      * Connection objects may also be FederatedConnection objects.
@@ -100,12 +98,10 @@ public abstract class ConnectionFactory {
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      *
-     * @link dependency
-     * @label creates
-     * @associates <{Federation}>
+     * @see javax.xml.registry.FederatedConnection
      */
     public abstract FederatedConnection createFederatedConnection(Collection connections) throws JAXRException;
-    
+
     /**
      * Creates a default <code>ConnectionFactory</code> object.
      *
@@ -123,7 +119,7 @@ public abstract class ConnectionFactory {
             +ex.getMessage());
         }
     }
-    
+
     private static Object newInstance(String className,
     ClassLoader classLoader)
     throws JAXRException {
@@ -144,7 +140,7 @@ public abstract class ConnectionFactory {
             x);
         }
     }
-    
+
     /**
      * Finds the implementation <code>Class</code> object for the given
      * factory name, or if that fails, finds the <code>Class</code> object
@@ -174,7 +170,7 @@ public abstract class ConnectionFactory {
         } catch (Exception x) {
             throw new JAXRException(x.toString(), x);
         }
-        
+
         // Use the system property first
         try {
             String systemProp =
@@ -184,7 +180,7 @@ public abstract class ConnectionFactory {
             }
         } catch (SecurityException se) {
         }
-        
+
         // try to read from $java.home/lib/jaxr.properties
         try {
             String javah=System.getProperty( "java.home" );
@@ -199,7 +195,7 @@ public abstract class ConnectionFactory {
             }
         } catch(Exception ex ) {
         }
-        
+
         String serviceId = "META-INF/services/" + factoryId;
         // try to find services in CLASSPATH
         try {
@@ -209,14 +205,14 @@ public abstract class ConnectionFactory {
             } else {
                 is=classLoader.getResourceAsStream(serviceId);
             }
-            
+
             if( is!=null ) {
                 BufferedReader rd =
                 new BufferedReader(new InputStreamReader(is, "UTF-8"));
-                
+
                 String factoryClassName = rd.readLine();
                 rd.close();
-                
+
                 if (factoryClassName != null &&
                 ! "".equals(factoryClassName)) {
                     return newInstance(factoryClassName, classLoader);
@@ -224,21 +220,21 @@ public abstract class ConnectionFactory {
             }
         } catch( Exception ex ) {
         }
-        
+
         if (fallbackClassName == null) {
             throw new JAXRException(
             "Provider for " + factoryId + " cannot be found", null);
         }
-        
+
         return newInstance(fallbackClassName, classLoader);
     }
-    
+
     static private final String CONNECTION_FACTORY_CLASS
     = "javax.xml.registry.ConnectionFactoryClass";
-    
+
     static private final String DEFAULT_CONNECTION_FACTORY
     = "com.sun.xml.registry.common.ConnectionFactoryImpl";
-    
+
     /** @link dependency
      * @label creates
      */

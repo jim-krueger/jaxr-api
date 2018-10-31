@@ -36,34 +36,33 @@ public interface Connection {
 	 * then the newly set Connection property is visible to the RegistryService
 	 * previously returned by this call.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the RegistryService associated with this object
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
-     * @associates <{RegistryService}>
      * @see RegistryService
      */
 	RegistryService getRegistryService() throws JAXRException;
 
     /**
 	 * Closes a Connection when it is no longer needed.
-     * Since a provider typically allocates significant resources outside 
+     * Since a provider typically allocates significant resources outside
      * the JVM on behalf of a Connection, clients should close them when
      * they are not needed.
      *
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
     void close() throws JAXRException;
-	
+
 	/**
 	 * Indicated whether this Connection has been closed or not.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if Connection is closed; <code>false</code> otherwise
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -76,7 +75,7 @@ public interface Connection {
 	 * A JAXR provider must support both modes
 	 * of communication. A JAXR client can choose which mode it wants to use.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if Connection is synchronous (default); <code>false</code> otherwise
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -85,11 +84,11 @@ public interface Connection {
 	public boolean isSynchronous() throws JAXRException;
 
 	/**
-	 * Sets whether the client uses synchronous communication or not. 
+	 * Sets whether the client uses synchronous communication or not.
 	 * A JAXR client may dynamically change its communication style
-	 * preference. 
+	 * preference.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param sync	<code>true</code> if Connection is desired to be synchronous; <code>false</code> otherwise
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -102,7 +101,7 @@ public interface Connection {
 	 * A JAXR client may dynamically change its identity by changing
 	 * the credentials associated with it.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 *
 	 * @param credentials	a Collection oj java.lang.Objects which provide identity related information for the caller.
@@ -114,14 +113,14 @@ public interface Connection {
 	/**
 	 * Gets the credentials associated with this client.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL>
-	 * 	 
-	 * @return Set of java.lang.Object instances. The Collection may be empty but not null.	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
+	 *
+	 * @return Set of java.lang.Object instances. The Collection may be empty but not null.
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 *
 	 */
 	public Set getCredentials() throws JAXRException;
-	
+
 
 }

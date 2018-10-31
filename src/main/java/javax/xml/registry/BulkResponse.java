@@ -33,41 +33,41 @@ import javax.xml.registry.infomodel.*;
 public interface BulkResponse extends JAXRResponse {
 
     /**
-     * Get the Collection of objects returned as a response of a 
+     * Get the Collection of objects returned as a response of a
 	 * bulk operation.
-	 * Caller thread will block here if result is not yet available. 
+	 * Caller thread will block here if result is not yet available.
      *
-     * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+     * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @see javax.xml.registry.infomodel.RegistryObject
-     * @return Collection of RegistryObject instances. The Collection may be empty but not null.	 
+     * @return Collection of RegistryObject instances. The Collection may be empty but not null.
      * @throws JAXRException	If the JAXR provider encounters an internal error
      *
      */
     Collection getCollection() throws JAXRException;
 
-    /** 
-	 * Get the Collection of RegistryException instances in case of partial commit. 
-	 * Caller thread will block here if result is not yet available. 
+    /**
+	 * Get the Collection of RegistryException instances in case of partial commit.
+	 * Caller thread will block here if result is not yet available.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL>
-	 *	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
+	 *
 	 * @see RegistryException
-	 * @return Collection of RegistryException instances. Return null if result is available and there is no RegistryException.	 
+	 * @return Collection of RegistryException instances. Return null if result is available and there is no RegistryException.
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
     Collection getExceptions() throws JAXRException;
 
-	/** 
+	/**
 	 * Determines whether the response is a partial response due to large result set.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if the response is partial; <code>false</code> otherwise
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
 	public boolean isPartialResponse() throws JAXRException;
-	
+
 }

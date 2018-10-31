@@ -24,9 +24,9 @@ package javax.xml.registry;
 public interface CapabilityProfile {
 
 	/**
-	 * Gets the JAXR specification version supported by the JAXR provider. 
+	 * Gets the JAXR specification version supported by the JAXR provider.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the specification version
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
@@ -35,14 +35,14 @@ public interface CapabilityProfile {
 	public String getVersion() throws JAXRException;
 
 	/**
-	 * Gets the capability level supported by the JAXR provider. 
+	 * Gets the capability level supported by the JAXR provider.
 	 *
-	 * <p><DL><DT><B>Capability Level: 0 </B></DL> 	 
+	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the capability level
 	 * @throws JAXRException	If the JAXR provider encounters an internal error
 	 *
 	 */
     public int getCapabilityLevel() throws JAXRException;
-		
+
 }
