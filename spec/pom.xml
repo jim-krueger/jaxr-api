@@ -23,6 +23,7 @@
         <version>1.0.9-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>jakarta.xml.registry</groupId>
     <artifactId>xml-registries-spec</artifactId>
     <packaging>pom</packaging>
     <name>Jakarta XML Registries Specification</name>
