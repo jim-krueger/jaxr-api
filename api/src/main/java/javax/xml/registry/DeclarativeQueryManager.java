@@ -39,8 +39,8 @@ public interface DeclarativeQueryManager extends QueryManager {
 	 * @param queryType	the type of query
 	 * @param queryString	the query in its string representation
 	 * @return Query object created
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
-	 * @throws InvalidRequestException	If the JAXR provider validates query syntax (optional) and the sqlQuery is not valid
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
+	 * @throws InvalidRequestException	If the Jakarta XML Registries provider validates query syntax (optional) and the sqlQuery is not valid
 	 *
 	 */
 	Query createQuery(int queryType, String queryString) throws InvalidRequestException, JAXRException;
@@ -52,7 +52,7 @@ public interface DeclarativeQueryManager extends QueryManager {
 	 *
 	 * @param query	the query to be executed
 	 * @return the BulkResponse that is the result of the query
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public BulkResponse executeQuery(Query query) throws JAXRException;

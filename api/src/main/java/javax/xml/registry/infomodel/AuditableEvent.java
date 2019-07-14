@@ -48,7 +48,7 @@ public interface AuditableEvent extends RegistryObject {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the User that sent the request that generated this this AuditableEvent. Must not be null
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see User
      */
@@ -60,7 +60,7 @@ public interface AuditableEvent extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the timestamp that records the time the event occured
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Timestamp getTimestamp() throws JAXRException;
@@ -72,7 +72,7 @@ public interface AuditableEvent extends RegistryObject {
 	 *
 	 * @see AuditableEvent#EVENT_TYPE_CREATED
 	 * @return the type of this event
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     int getEventType() throws JAXRException;
@@ -83,7 +83,7 @@ public interface AuditableEvent extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the RegistryObject that was the focus of this event
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     RegistryObject getRegistryObject() throws JAXRException;

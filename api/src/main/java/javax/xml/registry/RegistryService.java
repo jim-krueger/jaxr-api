@@ -22,10 +22,10 @@ import javax.xml.registry.infomodel.*;
 
 
 /**
- * This is the principal interface implemented by a JAXR provider.
+ * This is the principal interface implemented by a Jakarta XML Registries provider.
  * A registry client can get this interface from a Connection to a registry.
  * It provides the methods that are used by the client to discover various capability
- * specific interfaces implemented by the JAXR provider.
+ * specific interfaces implemented by the Jakarta XML Registries provider.
  *
  * @see Connection
  * @author Farrukh S. Najmi
@@ -33,12 +33,12 @@ import javax.xml.registry.infomodel.*;
 public interface RegistryService {
 
     /**
-     * Returns the CapabilityProfile for the JAXR provider.
+     * Returns the CapabilityProfile for the Jakarta XML Registries provider.
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-	 * @return the CapabilityProfile for a JAXR provider
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @return the CapabilityProfile for a Jakarta XML Registries provider
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.CapabilityProfile
      * @see LifeCycleManager
@@ -47,12 +47,12 @@ public interface RegistryService {
 
 
     /**
-     * Returns the BusinessLifeCycleManager object implemented by the JAXR provider.
+     * Returns the BusinessLifeCycleManager object implemented by the Jakarta XML Registries provider.
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the BusinessLifeCycleManager
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.BusinessLifeCycleManager
      * @see LifeCycleManager
@@ -60,25 +60,25 @@ public interface RegistryService {
     BusinessLifeCycleManager getBusinessLifeCycleManager() throws JAXRException;
 
     /**
-     * Returns the BusinessQueryManager object implemented by the JAXR provider.
+     * Returns the BusinessQueryManager object implemented by the Jakarta XML Registries provider.
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the BusinessQueryManaer
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see BusinessQueryManager
      */
     BusinessQueryManager getBusinessQueryManager() throws JAXRException;
 
     /**
-     * Returns the DeclarativeQueryManager object implemented by the JAXR provider.
+     * Returns the DeclarativeQueryManager object implemented by the Jakarta XML Registries provider.
      *
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the DeclarativeQueryManager
-     * @throws JAXRException	If the JAXR provider encounters an internal error
-     * @throws UnsupportedCapabilityException If the JAXR provider can not satisfy the request
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
+     * @throws UnsupportedCapabilityException If the Jakarta XML Registries provider can not satisfy the request
      *
      * @see DeclarativeQueryManager
      */
@@ -95,7 +95,7 @@ public interface RegistryService {
 	 * @param requestId	the id for a previous asynchronous request
 	 * @return the BulkResponse that contains the result for the specified request
 	 * @throws InvalidRequestException	if no responses exist for specified requestId
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	BulkResponse getBulkResponse(String requestId) throws InvalidRequestException, JAXRException;
@@ -108,7 +108,7 @@ public interface RegistryService {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the ClassificationScheme that is the default postal scheme
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public ClassificationScheme getDefaultPostalScheme()  throws JAXRException;
@@ -122,7 +122,7 @@ public interface RegistryService {
 	 *
 	 * @param request	the registry-specific request in a String representation
 	 * @return the String that is the XML response in a registry-specific manner
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String makeRegistrySpecificRequest(String request) throws JAXRException;

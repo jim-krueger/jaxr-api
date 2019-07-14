@@ -19,7 +19,7 @@ package javax.xml.registry;
 /**
  * Represents a single logical connection to a federation or group of
  * registry providers. This interface is used in support of the distributed
- * query feature of the JAXR API.
+ * query feature of the Jakarta XML Registries API.
  *
  *
  * @author Farrukh S. Najmi
@@ -30,7 +30,7 @@ public interface FederatedConnection extends Connection {
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @associates <{RegistryService}>
      * @see RegistryService

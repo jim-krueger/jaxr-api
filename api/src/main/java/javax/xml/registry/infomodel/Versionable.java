@@ -35,7 +35,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the major version for this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     int getMajorVersion() throws JAXRException;
@@ -46,7 +46,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param majorVersion	the major version number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setMajorVersion(int majorVersion) throws JAXRException;
@@ -57,7 +57,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the minor version for this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     int getMinorVersion() throws JAXRException;
@@ -68,7 +68,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @param minorVersion	the minor version number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setMinorVersion(int minorVersion) throws JAXRException;
@@ -79,7 +79,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the user-defined version number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     String getUserVersion() throws JAXRException;
@@ -90,7 +90,7 @@ public interface Versionable {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @param userVersion	the user-defined version number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setUserVersion(String userVersion) throws JAXRException;

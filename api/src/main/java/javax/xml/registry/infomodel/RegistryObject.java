@@ -34,7 +34,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the Key for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Key getKey() throws JAXRException;
@@ -45,7 +45,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the description for this object which must not be null
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     InternationalString getDescription() throws JAXRException;
@@ -56,7 +56,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param description the description for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setDescription(InternationalString description) throws JAXRException;
@@ -74,7 +74,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the name for this object which must not be null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     InternationalString getName() throws JAXRException;
@@ -86,7 +86,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param name	the name for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setName(InternationalString name) throws JAXRException;
@@ -97,7 +97,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param key the key for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void setKey(Key key) throws JAXRException;
@@ -111,7 +111,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the String containing the XML representation for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	String toXML() throws JAXRException;
@@ -123,7 +123,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classification	the Classification being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addClassification(Classification classification) throws JAXRException;
@@ -135,7 +135,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classifications	the Collection of Classifications being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addClassifications(Collection classifications) throws JAXRException;
@@ -146,7 +146,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classification	the Classification being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeClassification(Classification classification) throws JAXRException;
@@ -157,7 +157,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classifications	the Collection of Classifications being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeClassifications(Collection classifications) throws JAXRException;
@@ -169,7 +169,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classifications	the Collection of Classifications being set
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void setClassifications(Collection classifications) throws JAXRException;
@@ -181,7 +181,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 *
      * @see javax.xml.registry.infomodel.Classification
      * @return Collection of Classification instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
 	 */
@@ -195,7 +195,7 @@ public interface RegistryObject extends ExtensibleObject  {
      *
      * @see javax.xml.registry.infomodel.AuditableEvent
      * @return Collection of AuditableEvent instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      */
@@ -208,7 +208,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param association	the Association being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addAssociation(Association association) throws JAXRException;
@@ -220,7 +220,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param associations	the Collection of Associations being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addAssociations(Collection associations) throws JAXRException;
@@ -231,7 +231,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param association	the Association being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeAssociation(Association association) throws JAXRException;
@@ -242,7 +242,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param associations	the Collection of Associations being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeAssociations(Collection associations) throws JAXRException;
@@ -254,7 +254,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param associations	the Collection of Associations being set
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setAssociations(Collection associations) throws JAXRException;
@@ -266,7 +266,7 @@ public interface RegistryObject extends ExtensibleObject  {
      *
      * @see javax.xml.registry.infomodel.Association
      * @return Collection of Association instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      */
@@ -279,7 +279,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 *
      * @see javax.xml.registry.infomodel.RegistryObject
      * @return Collection of RegistryObject instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getAssociatedObjects() throws JAXRException;
@@ -291,7 +291,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalIdentifier	the ExternalIdentifier being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addExternalIdentifier(ExternalIdentifier externalIdentifier) throws JAXRException;
@@ -303,7 +303,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalIdentifiers	the Collection of ExternalIdentifiers being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addExternalIdentifiers(Collection externalIdentifiers) throws JAXRException;
@@ -314,7 +314,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalIdentifier	the ExternalIdentifier being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeExternalIdentifier(ExternalIdentifier externalIdentifier) throws JAXRException;
@@ -325,7 +325,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalIdentifiers	the Collection of ExternalIdentifiers being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeExternalIdentifiers(Collection externalIdentifiers) throws JAXRException;
@@ -337,7 +337,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalIdentifiers	the Collection of ExternalIdentifiers being set
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setExternalIdentifiers(Collection externalIdentifiers) throws JAXRException;
@@ -350,7 +350,7 @@ public interface RegistryObject extends ExtensibleObject  {
      *
      * @see javax.xml.registry.infomodel.ExternalIdentifier
      * @return Collection of ExternalIdentifier instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getExternalIdentifiers() throws JAXRException;
@@ -361,7 +361,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalLink	the ExternalLink being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addExternalLink(ExternalLink externalLink) throws JAXRException;
@@ -372,7 +372,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalLinks	the Collection of ExternalLinks being added
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addExternalLinks(Collection externalLinks) throws JAXRException;
@@ -383,7 +383,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalLink	the ExternalLink being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeExternalLink(ExternalLink externalLink) throws JAXRException;
@@ -394,7 +394,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalLinks	the Collection of ExternalLinks being removed
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeExternalLinks(Collection externalLinks) throws JAXRException;
@@ -406,7 +406,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param externalLinks	the Collection of ExternalLinks being set
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setExternalLinks(Collection externalLinks) throws JAXRException;
@@ -418,7 +418,7 @@ public interface RegistryObject extends ExtensibleObject  {
      *
      * @see javax.xml.registry.infomodel.ExternalLink
      * @return Collection of ExternalLink instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getExternalLinks() throws JAXRException;
@@ -429,7 +429,7 @@ public interface RegistryObject extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
      *
      * @return the object type as a Concept within the pre-defined ClassificationScheme named ObjectType
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Concept getObjectType() throws JAXRException;
@@ -438,7 +438,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * Gets the Organization that submitted this RegistryObject.
 	 *
 	 * @return the Organization that submitted this object to the registry
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	Organization getSubmittingOrganization() throws JAXRException;
@@ -450,7 +450,7 @@ public interface RegistryObject extends ExtensibleObject  {
      *
      * @see javax.xml.registry.infomodel.RegistryPackage
      * @return Collection of RegistryPackage instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getRegistryPackages() throws JAXRException;
@@ -461,7 +461,7 @@ public interface RegistryObject extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the LifeCycleManager objet that created this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	LifeCycleManager getLifeCycleManager() throws JAXRException;

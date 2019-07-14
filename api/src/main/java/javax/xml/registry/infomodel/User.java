@@ -36,7 +36,7 @@ public interface User extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the Organization that this User is affiliated with
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see Organization
 	 */
@@ -48,7 +48,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the name of this User
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public PersonName getPersonName() throws JAXRException;
@@ -59,7 +59,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param personName	the name of this User
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setPersonName(PersonName personName) throws JAXRException;
@@ -71,7 +71,7 @@ public interface User extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.PostalAddress
      * @return Collection of PostalAddress instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      * @see PostalAddress
@@ -84,7 +84,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param addresses Is a Collection of PostAddress instances.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setPostalAddresses(Collection addresses) throws JAXRException;
@@ -95,7 +95,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the URL for this User's home page
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public URL getUrl() throws JAXRException;
@@ -106,7 +106,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param url	the URL for this User's home page
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setUrl(URL url) throws JAXRException;
@@ -120,7 +120,7 @@ public interface User extends RegistryObject {
 	 * @see javax.xml.registry.infomodel.TelephoneNumber
 	 * @return Collection of TelephoneNumber instances. The Collection may be empty but not null.
 	 * @param phoneType specifies the type of phone numbers to be returned. If phoneType is null, return all telephoneNumbers
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public Collection getTelephoneNumbers(String phoneType) throws JAXRException;
@@ -131,7 +131,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param phoneNumbers	the Collection of TelephoneNumbers to be set
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setTelephoneNumbers(Collection phoneNumbers) throws JAXRException;
@@ -143,7 +143,7 @@ public interface User extends RegistryObject {
 	 *
 	 * @see javax.xml.registry.infomodel.EmailAddress
 	 * @return Collection of EmailAddress instances. The Collection may be empty but not null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public Collection getEmailAddresses() throws JAXRException;
@@ -154,7 +154,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param emailAddresses	the Collection of EmailAddresses to be set
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setEmailAddresses(Collection emailAddresses) throws JAXRException;
@@ -166,7 +166,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the type for this User, which is an arbitrary String
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getType() throws JAXRException;
@@ -177,7 +177,7 @@ public interface User extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param type	the type for this User, which is an arbitrary String
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setType(String type) throws JAXRException;

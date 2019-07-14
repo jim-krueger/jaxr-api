@@ -38,7 +38,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concept	the concept being added as a child of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildConcept(Concept concept) throws JAXRException;
@@ -49,7 +49,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concepts	the Collection of Concepts being added as a children of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildConcepts(Collection concepts) throws JAXRException;
@@ -60,7 +60,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concept	the concept being removed as a child Concept of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildConcept(Concept concept) throws JAXRException;
@@ -71,7 +71,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concepts	the Collection of Concepts being removed as children Concepts of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildConcepts(Collection concepts) throws JAXRException;
@@ -82,7 +82,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the number of children Concepts
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     int getChildConceptCount() throws JAXRException;
@@ -94,7 +94,7 @@ public interface ClassificationScheme extends RegistryEntry {
      *
      * @see javax.xml.registry.infomodel.Concept
      * @return Collection of Concept instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getChildrenConcepts() throws JAXRException;
@@ -106,7 +106,7 @@ public interface ClassificationScheme extends RegistryEntry {
      *
      * @see javax.xml.registry.infomodel.Concept
      * @return Collection of Concept instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getDescendantConcepts() throws JAXRException;
@@ -118,7 +118,7 @@ public interface ClassificationScheme extends RegistryEntry {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return <code>true</code>if this is an external ClassificationScheme; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     boolean isExternal() throws JAXRException;
@@ -134,7 +134,7 @@ public interface ClassificationScheme extends RegistryEntry {
 	 * @see ClassificationScheme#VALUE_TYPE_EMBEDDED_PATH
 	 * @see ClassificationScheme#VALUE_TYPE_NON_UNIQUE
 	 * @return an integer constant that describes the type of values supported by this ClassificationScheme
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     int getValueType() throws JAXRException;
@@ -150,7 +150,7 @@ public interface ClassificationScheme extends RegistryEntry {
      * @see ClassificationScheme#VALUE_TYPE_NON_UNIQUE
 	 *
 	 * @param valueType	an integer constant that describes the type of values supported by this ClassificationScheme
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setValueType(int valueType) throws JAXRException;

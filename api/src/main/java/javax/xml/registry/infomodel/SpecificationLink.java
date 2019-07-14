@@ -37,7 +37,7 @@ public interface SpecificationLink extends RegistryObject {
 	 * @return the RegistryObject that is the specification object.
      * 	For a UDDI provider the specification object must be a Concept with no parent.
      * 	For an ebXML provider it is likely to be an ExtrinsicObject.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see RegistryObject
      */
@@ -51,7 +51,7 @@ public interface SpecificationLink extends RegistryObject {
      * @param obj the RegistryObject that is the specification object.
      * 	For a UDDI provider the specification object must be a Concept with no parent.
      * 	For an ebXML provider it is likely to be an ExtrinsicObject.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setSpecificationObject(RegistryObject obj) throws JAXRException;
@@ -64,7 +64,7 @@ public interface SpecificationLink extends RegistryObject {
      *
 	 *
      * @return the usage description for this object, which must not be null
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
 	InternationalString getUsageDescription() throws JAXRException;
@@ -75,7 +75,7 @@ public interface SpecificationLink extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param usageDescription the description of usage parameters for this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
 	void setUsageDescription(InternationalString usageDescription) throws JAXRException;
@@ -88,7 +88,7 @@ public interface SpecificationLink extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the Collection of String instances. The Collection may be empty but not null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
      */
 	Collection getUsageParameters() throws JAXRException;
@@ -99,7 +99,7 @@ public interface SpecificationLink extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param usageParameters the Collection of usage parameter Strings
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
 	void setUsageParameters(Collection usageParameters) throws JAXRException;
@@ -111,7 +111,7 @@ public interface SpecificationLink extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the parent ServiceBinding within which this object is composed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	ServiceBinding getServiceBinding() throws JAXRException;

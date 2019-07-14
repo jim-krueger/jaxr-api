@@ -17,7 +17,7 @@
 package javax.xml.registry;
 
 /**
- * This exception is thrown when the JAXR provider finds a Object that is
+ * This exception is thrown when the Jakarta XML Registries provider finds a Object that is
  * out-of-place or of the wrong type within the context of a user request.
  * For example a saveOrganizations request in BusinessLifeCycleManager would
  * throw this Exception if it found an Object other than Organization in the

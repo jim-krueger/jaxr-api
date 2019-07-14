@@ -20,7 +20,7 @@ import javax.xml.registry.infomodel.*;
 
 /**
  * This is the common base class for all Exceptions that are detected on the registry
- * provider side rather than the JAXR client side.
+ * provider side rather than the Jakarta XML Registries client side.
  *
  * @author Farrukh S. Najmi
  */
@@ -77,7 +77,7 @@ public class RegistryException extends JAXRException {
      * Gets the Key to the first object that encountered an error in the registry.
      *
      * @return Key the key to the first object in error
-	 * @throws JAXRException If the JAXR provider encounters an internal error
+	 * @throws JAXRException If the Jakarta XML Registries provider encounters an internal error
      */
     public Key getErrorObjectKey() throws JAXRException {
 		return errorObjectKey;
@@ -87,7 +87,7 @@ public class RegistryException extends JAXRException {
      * Sets the Key to the first object that encountered an error in the registry.
      *
      * @param key	the key to the first object in error
-	 * @throws JAXRException If the JAXR provider encounters an internal error
+	 * @throws JAXRException If the Jakarta XML Registries provider encounters an internal error
      */
     public void setErrorObjectKey(Key key) throws JAXRException {
 		errorObjectKey = key;

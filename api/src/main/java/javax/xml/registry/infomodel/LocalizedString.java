@@ -41,7 +41,7 @@ public interface LocalizedString {
 	 *
 	 * @see LocalizedString#DEFAULT_CHARSET_NAME
 	 * @return the character set name for the character set used by this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     String getCharsetName() throws JAXRException;
@@ -54,7 +54,7 @@ public interface LocalizedString {
 	 *
 	 * @see java.util.Locale#getDefault()
 	 * @return the Locale used by this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Locale getLocale() throws JAXRException;
@@ -65,7 +65,7 @@ public interface LocalizedString {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the value defined by this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     String getValue() throws JAXRException;
@@ -76,7 +76,7 @@ public interface LocalizedString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param charsetName	the character set name for the character set used by this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setCharsetName(String charsetName) throws JAXRException;
@@ -87,7 +87,7 @@ public interface LocalizedString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param locale 	the Locale used by this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setLocale(Locale locale) throws JAXRException;
@@ -98,7 +98,7 @@ public interface LocalizedString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param value	the value defined by this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setValue(String value) throws JAXRException;

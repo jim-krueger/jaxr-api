@@ -40,7 +40,7 @@ public interface Service extends RegistryEntry {
 	 *
 	 * @see RegistryObject#getSubmittingOrganization()
 	 * @return the Organization that provides this service
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 *
 	 */
@@ -52,7 +52,7 @@ public interface Service extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param providingOrganization	the Organization that provides this service
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void setProvidingOrganization(Organization providingOrganization) throws JAXRException;
@@ -63,7 +63,7 @@ public interface Service extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param serviceBinding	the ServiceBinding being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addServiceBinding(ServiceBinding serviceBinding) throws JAXRException;
@@ -74,7 +74,7 @@ public interface Service extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param serviceBindings	the Collection of ServiceBindings being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addServiceBindings(Collection serviceBindings) throws JAXRException;
@@ -85,7 +85,7 @@ public interface Service extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param serviceBinding	the ServiceBinding being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeServiceBinding(ServiceBinding serviceBinding) throws JAXRException;
@@ -96,7 +96,7 @@ public interface Service extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param serviceBindings	the Collection of ServiceBindings being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeServiceBindings(Collection serviceBindings) throws JAXRException;
@@ -108,7 +108,7 @@ public interface Service extends RegistryEntry {
 	 *
 	 * @see javax.xml.registry.infomodel.ServiceBinding
 	 * @return Collection of ServiceBinding instances. The Collection may be empty but not null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	Collection getServiceBindings() throws JAXRException;

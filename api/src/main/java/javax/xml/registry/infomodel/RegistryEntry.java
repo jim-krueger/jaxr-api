@@ -36,7 +36,7 @@ public interface RegistryEntry extends RegistryObject, Versionable {
 	 * @see RegistryEntry#STATUS_SUBMITTED
 	 *
 	 * @return the life cycle status as an integer enumeration
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     int getStatus() throws JAXRException;
@@ -50,7 +50,7 @@ public interface RegistryEntry extends RegistryObject, Versionable {
      *
 	 * @see RegistryEntry#STABILITY_DYNAMIC
 	 * @return the stability indicator as an integer enumeration
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
      */
     int getStability() throws JAXRException;
@@ -61,7 +61,7 @@ public interface RegistryEntry extends RegistryObject, Versionable {
 	 * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
 	 *
 	 * @param stability the stability indicator
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setStability(int stability) throws JAXRException;
@@ -78,7 +78,7 @@ public interface RegistryEntry extends RegistryObject, Versionable {
 	 * <DL><DT><B>Capability Level: 1 </B><DD>This method must throw UnsupportedCapabilityException in lower capability levels.</DL>
 	 *
 	 * @return the expiration Date for the stability indicator
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	Date getExpiration() throws JAXRException;
@@ -89,7 +89,7 @@ public interface RegistryEntry extends RegistryObject, Versionable {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param expiration	the expiration Date for the stability indicator
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void setExpiration(Date expiration) throws JAXRException;

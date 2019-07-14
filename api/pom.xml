@@ -41,7 +41,7 @@
         <findbugs.threshold>Low</findbugs.threshold>
     </properties>
     <name>jaxr-api</name>
-    <description>JAX R API: Eclipse Project for Stable EE4J APIs</description>
+    <description>Jakarta XML Registries: Eclipse Project for Stable EE4J APIs</description>
     <inceptionYear>2013</inceptionYear>
     <url>https://github.com/eclipse-ee4jjaxr-api</url>
 
@@ -79,7 +79,7 @@
 
     <mailingLists>
         <mailingList>
-            <name>JAXR mailing list</name>
+            <name>Jakarta XML Registries mailing list</name>
             <post>jakartaee-stable-dev@eclipse.org</post>
             <subscribe>https://dev.eclipse.org/mailman/listinfo/jakartaee-stable-dev</subscribe>
             <unsubscribe>https://dev.eclipse.org/mailman/listinfo/jakartaee-stable-dev</unsubscribe>
@@ -239,7 +239,7 @@
 		        <docfilessubdirs>true</docfilessubdirs>
                      <groups>
                          <group>
-                             <title>JAXR API Documentation</title>
+                             <title>Jakarta XML Registries API Documentation</title>
                              <packages>javax.xml.registry</packages>
                          </group>
                      </groups>

@@ -17,30 +17,30 @@
 package javax.xml.registry;
 
 /**
- * Provides information about the capabilities of a JAXR provider.
+ * Provides information about the capabilities of a Jakarta XML Registries provider.
  *
  * @author Farrukh S. Najmi
  */
 public interface CapabilityProfile {
 
 	/**
-	 * Gets the JAXR specification version supported by the JAXR provider.
+	 * Gets the Jakarta XML Registries specification version supported by the Jakarta XML Registries provider.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the specification version
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getVersion() throws JAXRException;
 
 	/**
-	 * Gets the capability level supported by the JAXR provider.
+	 * Gets the capability level supported by the Jakarta XML Registries provider.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the capability level
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public int getCapabilityLevel() throws JAXRException;

@@ -35,7 +35,7 @@ public interface QueryManager {
 	 * @param id is the id of the Key for a RegistryObject.
 	 * @param objectType is a constant definition from LifeCycleManager that specifies the type of object desired.
      * @return the RegistryObject, returned as its concrete type (e.g. Organization, User etc.).
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public RegistryObject getRegistryObject(String id, String objectType)  throws JAXRException;
@@ -48,7 +48,7 @@ public interface QueryManager {
      *
 	 * @param id	the id for the desired object
      * @return the RegistryObject, returned as its concrete type (e.g. Organization, User etc.).
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public RegistryObject getRegistryObject(String id)  throws JAXRException;
@@ -62,7 +62,7 @@ public interface QueryManager {
 	 *
 	 * @param objectKeys	a Collection of Key objects for the desired objects
 	 * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public BulkResponse getRegistryObjects(Collection objectKeys)  throws JAXRException;
@@ -78,7 +78,7 @@ public interface QueryManager {
      * @param objectKeys	a Collection of Key objects for the desired objects
      * @param objectTypes	a Collection of String objects that allow filtering desired objects by their type
      * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public BulkResponse getRegistryObjects(Collection objectKeys, String objectTypes)  throws JAXRException;
@@ -90,7 +90,7 @@ public interface QueryManager {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public BulkResponse getRegistryObjects()  throws JAXRException;
@@ -104,7 +104,7 @@ public interface QueryManager {
 	 * @param objectType Is a constant that defines the type of object sought. See LifeCycleManager for constants for object types.
 	 * @see LifeCycleManager#ORGANIZATION
      * @return BulkResponse containing a heterogeneous Collection of RegistryObjects (e.g. Organization, User etc.).
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public BulkResponse getRegistryObjects(String objectType)  throws JAXRException;
@@ -116,7 +116,7 @@ public interface QueryManager {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the RegistryService created this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.RegistryService
      */

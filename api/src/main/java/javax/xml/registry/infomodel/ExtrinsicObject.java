@@ -40,7 +40,7 @@ public interface ExtrinsicObject extends RegistryEntry {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the mime type associated with this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     String getMimeType() throws JAXRException;
@@ -51,7 +51,7 @@ public interface ExtrinsicObject extends RegistryEntry {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param mimeType	the mime type associated with this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setMimeType(String mimeType) throws JAXRException;
@@ -64,7 +64,7 @@ public interface ExtrinsicObject extends RegistryEntry {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return <code>true</code> if the ExtrinsicObject is readable by the registry operator; <code>false</code> otherwise
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     boolean isOpaque() throws JAXRException;
@@ -75,7 +75,7 @@ public interface ExtrinsicObject extends RegistryEntry {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param isOpaque	boolean value set to <code>true</code> if the ExtrinsicObject is readable by the registry operator; <code>false</code> otherwise
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setOpaque(boolean isOpaque) throws JAXRException;
@@ -87,7 +87,7 @@ public interface ExtrinsicObject extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the DataHandler for the repository item
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public javax.activation.DataHandler getRepositoryItem() throws JAXRException;
@@ -99,7 +99,7 @@ public interface ExtrinsicObject extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param repositoryItem	the DataHandler for the repository item. Must not be null
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setRepositoryItem(javax.activation.DataHandler repositoryItem) throws JAXRException;

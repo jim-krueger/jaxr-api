@@ -16,7 +16,7 @@
 
 /**
  * <p>
- * This package describes the information model for the JAXR
+ * This package describes the information model for the Jakarta XML Registries
  * API. It is based largely on the ebXML Registry Information Model with enhancements
  * to support other registry specifications such as UDDI.
  *

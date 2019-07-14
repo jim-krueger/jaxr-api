@@ -47,7 +47,7 @@ public interface Slot {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getName() throws JAXRException;
@@ -60,7 +60,7 @@ public interface Slot {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 @param name	the name
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setName(String name) throws JAXRException;
@@ -72,7 +72,7 @@ public interface Slot {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the slot type which is an arbitrary String
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getSlotType() throws JAXRException;
@@ -83,7 +83,7 @@ public interface Slot {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param slotType	the slot type which is an arbitrary String
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setSlotType(String slotType) throws JAXRException;
@@ -95,7 +95,7 @@ public interface Slot {
 	 *
      * @see java.lang.String
      * @return Collection of String instances representing the values for this Slot. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      */
@@ -107,28 +107,28 @@ public interface Slot {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param values the values for this Slot
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setValues(Collection values) throws JAXRException;
 
 	/**
-	 * Name for pre-defined Slot used in PostalAddress by JAXR UDDI provider.
+	 * Name for pre-defined Slot used in PostalAddress by Jakarta XML Registries UDDI provider.
 	 */
 	public static final String SORT_CODE_SLOT = "sortCode";
 
 	/**
-	 * Name for pre-defined Slot used in PostalAddress by JAXR UDDI provider.
+	 * Name for pre-defined Slot used in PostalAddress by Jakarta XML Registries UDDI provider.
 	 */
 	public static final String ADDRESS_LINES_SLOT = "addressLines";
 
 	/**
-	 * Name for pre-defined Slot used in Organization and ClassificationScheme by JAXR UDDI provider.
+	 * Name for pre-defined Slot used in Organization and ClassificationScheme by Jakarta XML Registries UDDI provider.
 	 */
 	public static final String AUTHORIZED_NAME_SLOT = "authorizedName";
 
 	/**
-	 * Name for pre-defined Slot used in Organization and ClassificationScheme by JAXR UDDI provider.
+	 * Name for pre-defined Slot used in Organization and ClassificationScheme by Jakarta XML Registries UDDI provider.
 	 */
 	public static final String OPERATOR_SLOT = "operator";
 

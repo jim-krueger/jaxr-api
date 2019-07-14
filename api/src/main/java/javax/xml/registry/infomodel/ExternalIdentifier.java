@@ -39,7 +39,7 @@ public interface ExternalIdentifier extends RegistryObject {
 	 *
 	 * @see RegistryObject#addExternalIdentifier(ExternalIdentifier ei)
 	 * @return	the RegistryObject that this object identifies
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	RegistryObject getRegistryObject() throws JAXRException;
@@ -50,7 +50,7 @@ public interface ExternalIdentifier extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return	the identification value defined by this object (e.g. a company's DUNS number)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getValue() throws JAXRException;
@@ -61,7 +61,7 @@ public interface ExternalIdentifier extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param value	the identification value defined by this object (e.g. a company's DUNS number)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setValue(String value) throws JAXRException;
@@ -73,7 +73,7 @@ public interface ExternalIdentifier extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the ClassificationScheme that is used as the identification scheme (e.g. "DUNS")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see Classification
      */
@@ -86,7 +86,7 @@ public interface ExternalIdentifier extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param identificationScheme	the ClassificationScheme that is used as the identification scheme (e.g. "DUNS")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setIdentificationScheme(ClassificationScheme identificationScheme) throws JAXRException;

@@ -20,8 +20,8 @@ package javax.xml.registry;
 /**
  * FindQualifier provides various constants
  * that identify options that effect find method behavior.
- * A JAXR provider may silently ignore any qualifiers marked as optional.
- * A JAXR provider must support qualifiers not marked optional.
+ * A Jakarta XML Registries provider may silently ignore any qualifiers marked as optional.
+ * A Jakarta XML Registries provider must support qualifiers not marked optional.
  *
  * @see BusinessQueryManager
  */
@@ -74,10 +74,10 @@ public interface FindQualifier {
          */
         public static final String OR_ALL_KEYS = "orAllKeys";
 
-	/** Maps to UDDI combineCategoryBags. Required for JAXR UDDI providers, optional for all others. */
+	/** Maps to UDDI combineCategoryBags. Required for Jakarta XML Registries UDDI providers, optional for all others. */
 	public static final String COMBINE_CLASSIFICATIONS  = "combineClassifications";
 
-	/** Maps to UDDI serviceSubset. Required for JAXR UDDI providers, optional for all others. */
+	/** Maps to UDDI serviceSubset. Required for Jakarta XML Registries UDDI providers, optional for all others. */
 	public static final String SERVICE_SUBSET = "serviceSubset";
 
 	public static final String AND_ALL_KEYS  = "andAllKeys";
