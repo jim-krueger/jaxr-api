@@ -34,7 +34,7 @@ import javax.xml.registry.*;
  * An Association instance represents an association between a source RegistryObject and a target RegistryObject. These are referred to as sourceObject and targetObject for the Association instance. It is important which object is the sourceObject and which is the targetObject as it determines the directional semantics of an Association.
  * In the example in Figure 1, it is important to make the newer version of NAICS ClassificationScheme be the sourceObject and the older version of NAICS be the targetObject because the associationType implies that the sourceObject supersedes the targetObject (and not the other way around).
  * <h2>Association Types</h2>
- * Each Association must have an associationType attribute that identifies the type of that association. The associationType attribute is a reference to an enumeration Concept as defined by the predefined associationType ClassificationScheme in the JAXR specification. Our example uses the pre-defined associationType Concept named Supersedes.
+ * Each Association must have an associationType attribute that identifies the type of that association. The associationType attribute is a reference to an enumeration Concept as defined by the predefined associationType ClassificationScheme in the Jakarta XML Registries specification. Our example uses the pre-defined associationType Concept named Supersedes.
  *
  * <h2>Intramural Associations</h2>
  * A common use case for the Association interface is when a User "u" creates an Association "a" between two RegistryObjects "o1" and "o2" where association "a" and RegistryObjects "o1" and "o2" are objects that were created by the same User "u". This is the simplest use case where the association is between two objects that are owned by same User that is defining the Association. Such associations are referred to as intramural associations.
@@ -83,7 +83,7 @@ public interface Association extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return The RegistryObject that is the source object of this Association
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     RegistryObject getSourceObject() throws JAXRException;
@@ -95,7 +95,7 @@ public interface Association extends RegistryObject {
 	 *
 	 * @param srcObject the RegistryObject that is the source object of this Association
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setSourceObject(RegistryObject srcObject) throws JAXRException;
@@ -107,7 +107,7 @@ public interface Association extends RegistryObject {
 	 *
 	 * @return The RegistryObject that is the target object of this Association
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     RegistryObject getTargetObject() throws JAXRException;
@@ -119,7 +119,7 @@ public interface Association extends RegistryObject {
 	 *
 	 * @param targetObject the RegistryObject that is the target object of this Association
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setTargetObject(RegistryObject targetObject) throws JAXRException;
@@ -131,7 +131,7 @@ public interface Association extends RegistryObject {
 	 *
 	 * @return The association type for this Association which is a Concept in the AssociationType ClassificationScheme
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Concept getAssociationType() throws JAXRException;
@@ -143,7 +143,7 @@ public interface Association extends RegistryObject {
 	 *
 	 * @param associationType the association type for this Association which is a Concept in the AssociationType ClassificationScheme
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setAssociationType(Concept associationType) throws JAXRException;
@@ -163,7 +163,7 @@ public interface Association extends RegistryObject {
 	 *			owned by a User that is different from the User that created the Association;
      *			<code>false</code> otherwise
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isExtramural() throws JAXRException;
@@ -176,7 +176,7 @@ public interface Association extends RegistryObject {
 	 * @return	<code>true</code> if the association has been confirmed by the owner of the sourceObject;
 	 *			<code>false</code> otherwise. For intramural Associations always return true
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 */
 	public boolean isConfirmedBySourceOwner() throws JAXRException;
 
@@ -188,7 +188,7 @@ public interface Association extends RegistryObject {
 	 * @return	<code>true</code> if the association has been confirmed by the owner of the targetObject;
 	 *			<code>false</code> otherwise. For intramural Associations always return true
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isConfirmedByTargetOwner() throws JAXRException;
@@ -207,7 +207,7 @@ public interface Association extends RegistryObject {
 	 * @return	<code>true</code> if the isConfirmedBySourceOwner and isConfirmedByTargetOwner methods both return true;
 	 *			<code>false</code> otherwise. For intramural Associations always return true
 	 *
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isConfirmed() throws JAXRException;

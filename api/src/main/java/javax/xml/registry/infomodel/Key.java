@@ -33,7 +33,7 @@ public interface Key {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the id for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getId() throws JAXRException;
@@ -44,7 +44,7 @@ public interface Key {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param id	the id being defined for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setId(String id) throws JAXRException;

@@ -35,7 +35,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the PostalAddress for this Organization
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see PostalAddress
      */
@@ -47,7 +47,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param address the PostalAddress for this Organization
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setPostalAddress(PostalAddress address) throws JAXRException;
@@ -60,7 +60,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the User that is the primary Contact for this Organization. Must not be null
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see User
      */
@@ -78,7 +78,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param primaryContact	the User that is the primary Contact for this Organization
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setPrimaryContact(User primaryContact) throws JAXRException;
@@ -89,7 +89,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param user	the User being added to this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addUser(User user) throws JAXRException;
@@ -100,7 +100,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param users the Collection of Users being added to this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addUsers(Collection users) throws JAXRException;
@@ -111,7 +111,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param user	the User being removed from this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeUser(User user) throws JAXRException;
@@ -122,7 +122,7 @@ public interface Organization extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param users the Collection of Users being removed from this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeUsers(Collection users) throws JAXRException;
@@ -136,7 +136,7 @@ public interface Organization extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.User
      * @return Collection of User instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      * @see User
@@ -152,7 +152,7 @@ public interface Organization extends RegistryObject {
      *
 	 * @see javax.xml.registry.infomodel.TelephoneNumber
 	 * @return Collection of TelephoneNumber instances. The Collection may be empty but not null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
      * @param phoneType	a String that specifies the type of phone numbers desired
      * @see TelephoneNumber
@@ -165,7 +165,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param phoneNumbers the TelephoneNumbers being set for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setTelephoneNumbers(Collection phoneNumbers) throws JAXRException;
@@ -177,7 +177,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param service 	the Service being added to this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addService(Service service) throws JAXRException;
@@ -188,7 +188,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param services 	the Collection of Services being added to this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addServices(Collection services) throws JAXRException;
@@ -199,7 +199,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param service 	the Service being removed from this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeService(Service service) throws JAXRException;
@@ -210,7 +210,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param services 	the Collection of Services being removed from this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeServices(Collection services) throws JAXRException;
@@ -222,7 +222,7 @@ public interface Organization extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.Service
      * @return Collection of Service instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.infomodel.Service
      */
@@ -234,7 +234,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param organization the child Organization being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildOrganization(Organization organization) throws JAXRException;
@@ -245,7 +245,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param organizations the Collection of child Organizations being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildOrganizations(Collection organizations) throws JAXRException;
@@ -256,7 +256,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param organization the child Organization being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildOrganization(Organization organization) throws JAXRException;
@@ -267,7 +267,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param organizations the Collection of child Organizations being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildOrganizations(Collection organizations) throws JAXRException;
@@ -278,7 +278,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the number of children Organizations
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     int getChildOrganizationCount() throws JAXRException;
@@ -290,7 +290,7 @@ public interface Organization extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.Organization
      * @return Collection of Organization instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getChildOrganizations() throws JAXRException;
@@ -302,7 +302,7 @@ public interface Organization extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.Organization
      * @return Collection of Organization instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getDescendantOrganizations() throws JAXRException;
@@ -313,7 +313,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the parent Organization or null if object has no parent Organization
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Organization getParentOrganization()  throws JAXRException;
@@ -325,7 +325,7 @@ public interface Organization extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the root Organization or null if object has no parent Organization
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Organization getRootOrganization()  throws JAXRException;

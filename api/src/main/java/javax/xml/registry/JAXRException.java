@@ -17,7 +17,7 @@
 package javax.xml.registry;
 
 /**
- * Signals that a JAXR exception has occurred. It contains no members other than the standard reason String.
+ * Signals that a Jakarta XML Registries exception has occurred. It contains no members other than the standard reason String.
  *
  * @see JAXRResponse
  * @author     Nicholas Kassem

@@ -32,7 +32,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the street name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getStreet() throws JAXRException;
@@ -43,7 +43,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param street the street name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setStreet(String street) throws JAXRException;
@@ -56,7 +56,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the street number
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getStreetNumber() throws JAXRException;
@@ -67,7 +67,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param streetNumber the street number
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setStreetNumber(String streetNumber) throws JAXRException;
@@ -80,7 +80,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the city
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getCity() throws JAXRException;
@@ -91,7 +91,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param city the city
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setCity(String city) throws JAXRException;
@@ -104,7 +104,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the state or province
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getStateOrProvince() throws JAXRException;
@@ -115,7 +115,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param stateOrProvince	the state or province
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setStateOrProvince(String stateOrProvince) throws JAXRException;
@@ -128,7 +128,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the postal code (e.g. US zip code)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getPostalCode() throws JAXRException;
@@ -139,7 +139,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param postalCode the postal code (e.g. US zip code)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setPostalCode(String postalCode) throws JAXRException;
@@ -151,7 +151,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the country
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getCountry() throws JAXRException;
@@ -162,7 +162,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param country	the country
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setCountry(String country) throws JAXRException;
@@ -173,7 +173,7 @@ public interface PostalAddress extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the type for this PostalAddress. This is an arbitrary String (e.g. "Home", "Office")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getType() throws JAXRException;
@@ -184,7 +184,7 @@ public interface PostalAddress extends ExtensibleObject  {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param type	the type for this PostalAddress. This is an arbitrary String (e.g. "Home", "Office")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setType(String type) throws JAXRException;
@@ -195,7 +195,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param scheme	the user defined postal scheme.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setPostalScheme(ClassificationScheme scheme)  throws JAXRException;
@@ -210,7 +210,7 @@ public interface PostalAddress extends ExtensibleObject  {
 	 *
 	 * @see javax.xml.registry.RegistryService#getDefaultPostalScheme()
 	 * @return the user defined postal scheme.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public ClassificationScheme getPostalScheme()  throws JAXRException;

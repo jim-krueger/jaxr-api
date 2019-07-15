@@ -17,7 +17,7 @@
 package javax.xml.registry;
 
 /**
- * A JAXR requests' response.
+ * A Jakarta XML Registries requests' response.
  *
  * @see JAXRException
  * @author Farrukh S. Najmi
@@ -50,7 +50,7 @@ public interface JAXRResponse {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the request id
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	String getRequestId() throws JAXRException;
@@ -63,7 +63,7 @@ public interface JAXRResponse {
 	 *
 	 * @see JAXRResponse#STATUS_SUCCESS
 	 * @return the status which is an integer enumerated value
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public int getStatus() throws JAXRException;
@@ -75,7 +75,7 @@ public interface JAXRResponse {
 	 * <DL><DT><B>Capability Level: 0 </B></DL> 	 
 	 *
 	 * @return <code>true</code> if the response is available; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isAvailable() throws JAXRException;

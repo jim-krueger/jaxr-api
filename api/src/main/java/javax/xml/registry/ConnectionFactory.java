@@ -20,16 +20,16 @@ import java.util.*;
 import java.io.*;
 
 /**
- * This is the abstract base class for factory classes for creating a JAXR connection.
- * A JAXR ConnectionFactory object is configured in a provider-specific way to create connections with registry providers.
+ * This is the abstract base class for factory classes for creating a Jakarta XML Registries connection.
+ * A Jakarta XML Registries ConnectionFactory object is configured in a provider-specific way to create connections with registry providers.
  *
  * <h2>Looking Up a ConnectionFactory Using the JNDI API</h2>
- * The preferred way for a client to look up a JAXR ConnectionFactory is within the Java Naming and Directory Interface<sup>TM</sup> (JNDI) API.
+ * The preferred way for a client to look up a Jakarta XML Registries ConnectionFactory is within the Java Naming and Directory Interface<sup>TM</sup> (JNDI) API.
  * A ConnectionFactory object is registered with a naming service in a provider specific way, such as one based on the JNDI API. This registration associates the ConnectionFactory object with a logical name. When an application wants to establish a connection with the provider associated with that ConnectionFactory object, it does a lookup, providing the logical name. The application can then use the ConnectionFactory object that is returned to create a connection to the messaging provider.
  *
  * <h2>Looking Up a ConnectionFactory Without Using the JNDI API</h2>
- * The JAXR API provides an alternative way to look up a JAXR ConnectionFactory that does not require the use of the JNDI API. This is done using the newInstance static method on the abstract class ConnectionFactory provided in the JAXR API. The newInstance method returns a JAXR ConnectionFactory. The client may indicate which factory class should be instantiated by the newInstance method by defining the system property javax.xml.registry.ConnectionFactoryClass.
- * If this property is not set, the JAXR provider must return a default ConnectionFactory instance.
+ * The Jakarta XML Registries provides an alternative way to look up a JAXR ConnectionFactory that does not require the use of the JNDI API. This is done using the newInstance static method on the abstract class ConnectionFactory provided in the JAXR API. The newInstance method returns a JAXR ConnectionFactory. The client may indicate which factory class should be instantiated by the newInstance method by defining the system property javax.xml.registry.ConnectionFactoryClass.
+ * If this property is not set, the Jakarta XML Registries provider must return a default ConnectionFactory instance.
  *
  *
  * @see Connection
@@ -48,7 +48,7 @@ public abstract class ConnectionFactory {
      * <DD><CODE>javax.xml.registry.queryManagerURL</CODE> - URL String for the query manager service within the target registry provider
      * <DD><CODE>javax.xml.registry.lifeCycleManagerURL</CODE> - URL String for the life cycle manager service within the target registry provider. If unspecified, must default to value of the queryManagerURL described above
      * <DD><CODE>javax.xml.registry.semanticEquivalences</CODE> - String that allows specification of semantic equivalences
-     * <DD><CODE>javax.xml.registry.security.authenticationMethod</CODE> - string that provides a hint to the JAXR provider on the authentication method to be used when authenticating with the registry provider. Possible value include but are not limited to "UDDI_GET_AUTHTOKEN", "HTTP_BASIC", "CLIENT_CERTIFICATE", "MS_PASSPORT"
+     * <DD><CODE>javax.xml.registry.security.authenticationMethod</CODE> - string that provides a hint to the Jakarta XML Registries provider on the authentication method to be used when authenticating with the registry provider. Possible value include but are not limited to "UDDI_GET_AUTHTOKEN", "HTTP_BASIC", "CLIENT_CERTIFICATE", "MS_PASSPORT"
      * <DD><CODE>javax.xml.registry.uddi.maxRows</CODE> - integer that specifies the maximum number of rows to be returned for find operations. This property is specific for UDDI providers
      * <DD><CODE>javax.xml.registry.postalAddressScheme</CODE> - String that specifies the id of a ClassificationScheme that is used as the default postal address scheme for this connection
      * </DL>
@@ -56,7 +56,7 @@ public abstract class ConnectionFactory {
      *
      * @param properties configuration properties that are either
      * 	specified by JAXR specification or are provider specific.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public abstract void setProperties(Properties properties) throws JAXRException;
@@ -68,7 +68,7 @@ public abstract class ConnectionFactory {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the Properties defined for this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public abstract Properties getProperties() throws JAXRException;
@@ -76,12 +76,12 @@ public abstract class ConnectionFactory {
 
     /**
      * Create a named connection. Such a connection can be used to
-     * communicate with a JAXR provider.
+     * communicate with a Jakarta XML Registries provider.
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the Connection created by this call
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.Connection
      */
@@ -95,7 +95,7 @@ public abstract class ConnectionFactory {
      * @param connections Is a Collection of Connection objects. Note that
      * Connection objects may also be FederatedConnection objects.
      * @return the FederatedConnection created by this call
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      * @see javax.xml.registry.FederatedConnection
@@ -106,7 +106,7 @@ public abstract class ConnectionFactory {
      * Creates a default <code>ConnectionFactory</code> object.
      *
      * @return a new instance of a <code>ConnectionFactory</code>
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public static ConnectionFactory newInstance() throws JAXRException {
@@ -159,7 +159,7 @@ public abstract class ConnectionFactory {
      *                              to be used only if nothing else
      *                              is found; <code>null</code> to indicate that
      *                              there is no fallback class name
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     static Object find(String factoryId, String fallbackClassName)

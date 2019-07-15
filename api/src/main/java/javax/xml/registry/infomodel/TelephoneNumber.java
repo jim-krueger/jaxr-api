@@ -31,7 +31,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the country code
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getCountryCode() throws JAXRException;
@@ -43,7 +43,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the area code
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getAreaCode() throws JAXRException;
@@ -55,7 +55,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the telephone number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getNumber() throws JAXRException;
@@ -67,7 +67,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the internal extension number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getExtension() throws JAXRException;
@@ -79,7 +79,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @return the url
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getUrl() throws JAXRException;
@@ -90,7 +90,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the type for this TelephoneNumber, which is an arbitrary String
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getType() throws JAXRException;
@@ -101,7 +101,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param countryCode the country code
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setCountryCode(String countryCode) throws JAXRException;
@@ -112,7 +112,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param areaCode the area code
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setAreaCode(String areaCode) throws JAXRException;
@@ -123,7 +123,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param number	the telephone number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setNumber(String number) throws JAXRException;
@@ -134,7 +134,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param extension	the internal extension number
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setExtension(String extension) throws JAXRException;
@@ -145,7 +145,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
 	 * @param url the URL string
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setUrl(String url) throws JAXRException;
@@ -156,7 +156,7 @@ public interface TelephoneNumber {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param type the type for this TelephoneNumber, which is an arbitrary String
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setType(String type) throws JAXRException;

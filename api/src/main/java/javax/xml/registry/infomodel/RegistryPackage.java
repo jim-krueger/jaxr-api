@@ -35,7 +35,7 @@ public interface RegistryPackage extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObject	the RegistryObject being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addRegistryObject(RegistryObject registryObject) throws JAXRException;
@@ -46,7 +46,7 @@ public interface RegistryPackage extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObjects	the Collection of RegistryObjects being added
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void addRegistryObjects(Collection registryObjects) throws JAXRException;
@@ -57,7 +57,7 @@ public interface RegistryPackage extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObject	the RegistryObject being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeRegistryObject(RegistryObject registryObject) throws JAXRException;
@@ -68,7 +68,7 @@ public interface RegistryPackage extends RegistryEntry {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param registryObjects	the Collection of RegistryObject being removed
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	void removeRegistryObjects(Collection registryObjects) throws JAXRException;
@@ -80,7 +80,7 @@ public interface RegistryPackage extends RegistryEntry {
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
      * @return the Set of RegistryObjects that are members of this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Set getRegistryObjects() throws JAXRException;

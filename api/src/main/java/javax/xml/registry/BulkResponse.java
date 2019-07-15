@@ -41,7 +41,7 @@ public interface BulkResponse extends JAXRResponse {
      *
      * @see javax.xml.registry.infomodel.RegistryObject
      * @return Collection of RegistryObject instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getCollection() throws JAXRException;
@@ -54,7 +54,7 @@ public interface BulkResponse extends JAXRResponse {
 	 *
 	 * @see RegistryException
 	 * @return Collection of RegistryException instances. Return null if result is available and there is no RegistryException.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     Collection getExceptions() throws JAXRException;
@@ -65,7 +65,7 @@ public interface BulkResponse extends JAXRResponse {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if the response is partial; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isPartialResponse() throws JAXRException;

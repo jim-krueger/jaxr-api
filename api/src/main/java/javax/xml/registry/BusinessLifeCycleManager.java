@@ -45,7 +45,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
 	 * @return a BulkResponse containing the Collection of keys for those objects that were
 	 * saved successfully and any SaveException that was encountered in case of partial commit
 	 *
-	 * @throws JAXRException if the JAXR provider encounters an internal error
+	 * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveOrganizations(Collection organizations) throws JAXRException;
 
@@ -64,7 +64,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
     * @return a BulkResponse containing the Collection of keys for those objects that were
     * saved successfully and any SaveException that was encountered in case of partial commit
     *
-    * @throws JAXRException if the JAXR provider encounters an internal error
+    * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
     */
     BulkResponse saveServices(Collection services) throws JAXRException;
 
@@ -84,7 +84,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * saved successfully and any SaveException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveServiceBindings(Collection bindings) throws JAXRException;
 
@@ -104,7 +104,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * saved successfully and any SaveException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveConcepts(Collection concepts) throws JAXRException;
 
@@ -124,7 +124,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * saved successfully and any SaveException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveClassificationSchemes(Collection schemes) throws JAXRException;
 
@@ -147,7 +147,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * saved successfully and any SaveException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveAssociations(Collection associations, boolean replace) throws JAXRException;
 
@@ -164,7 +164,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
      BulkResponse deleteOrganizations(Collection organizationKeys) throws JAXRException;
 
@@ -180,7 +180,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteServices(Collection serviceKeys) throws JAXRException;
 
@@ -196,7 +196,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteServiceBindings(Collection bindingKeys) throws JAXRException;
 
@@ -212,7 +212,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteConcepts(Collection conceptKeys) throws JAXRException;
 
@@ -228,7 +228,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteClassificationSchemes(Collection schemeKeys) throws JAXRException;
 
@@ -244,7 +244,7 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteAssociations(Collection associationKeys) throws JAXRException;
 
@@ -262,13 +262,13 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
 	 * </ul>
 	 * <p>
 	 * The details of confirming an extramural Association are registry-specific. For UDDI and ebXML registries,
-	 * the registry-specific details are described in the JAXR specification.
+	 * the registry-specific details are described in the Jakarta XML Registries specification.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param assoc the Association object to be confirmed
 	 *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the User is not the owner of the
      * sourceObject or the targetObject
 	 */
@@ -286,13 +286,13 @@ public interface BusinessLifeCycleManager extends LifeCycleManager {
 	 * </ul>
 	 * <p>
 	 * The details of unconfirming an extramural Association are registry-specific. For UDDI and ebXML registries,
-	 * the registry-specific details are described in the JAXR specification.
+	 * the registry-specific details are described in the Jakarta XML Registries specification.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param assoc the Association object to be unconfirmed
 	 *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the User is not the owner of the
      * sourceObject or the targetObject
 	 */

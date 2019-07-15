@@ -31,9 +31,9 @@ public interface URIValidator {
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @param validate <code>true</code> implies JAXR provider must perform validation
+	 * @param validate <code>true</code> implies Jakarta XML Registries provider must perform validation
 	 * 	of URIs when they are set; <code>false</code> implies validation is turned off
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setValidateURI(boolean validate) throws JAXRException;
@@ -42,9 +42,9 @@ public interface URIValidator {
 	 * Gets whether to do URI validation for this object.
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @return <code>true</code> implies JAXR provider must perform validation
+	 * @return <code>true</code> implies Jakarta XML Registries provider must perform validation
 	 * 	of URIs when they are set; <code>false</code> implies validation is turned off
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean getValidateURI() throws JAXRException;

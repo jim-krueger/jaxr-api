@@ -33,7 +33,7 @@ public interface EmailAddress {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the actual email address (e.g. john.doe@acme.com)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getAddress() throws JAXRException;
@@ -44,7 +44,7 @@ public interface EmailAddress {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param address	the actual email address (e.g. john.doe@acme.com)
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setAddress(String address) throws JAXRException;
@@ -56,7 +56,7 @@ public interface EmailAddress {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return	the usage type for this object which is an arbitrary value (e.g. "Home" or "Office")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public String getType() throws JAXRException;
@@ -67,7 +67,7 @@ public interface EmailAddress {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param	type	the usage type for this object which is an arbitrary value (e.g. "Home" or "Office")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     public void setType(String type) throws JAXRException;

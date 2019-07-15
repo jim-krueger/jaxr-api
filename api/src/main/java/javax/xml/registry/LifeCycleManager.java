@@ -23,7 +23,7 @@ import javax.xml.registry.infomodel.*;
  * The LifeCycleManager interface is the main interface in the API for managing life cycle
  * operations on objects defined by the information model.
  * <p>
- * The factory methods of this interface must throw an UnsupportedCapabilityException if the client attempts to create an instance of an infomodel interface that is not supported by the capability level of the JAXR provider.
+ * The factory methods of this interface must throw an UnsupportedCapabilityException if the client attempts to create an instance of an infomodel interface that is not supported by the capability level of the Jakarta XML Registries provider.
  *
  * @author Farrukh S. Najmi
  */
@@ -211,12 +211,12 @@ public interface LifeCycleManager {
      *
      * @return an Object that can then be cast to an instance of the interface
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      * @throws InvalidRequestException if the interface is not an interface in
      * the javax.xml.registry.infomodel package
      *
-     * @throws UnsupportedCapabilityException if the client attempts to create an instance of an infomodel interface that is not supported by the capability level of the JAXR provider
+     * @throws UnsupportedCapabilityException if the client attempts to create an instance of an infomodel interface that is not supported by the capability level of the Jakarta XML Registries provider
      */
     public Object createObject(String interfaceName)
     throws JAXRException, InvalidRequestException, UnsupportedCapabilityException;
@@ -236,7 +236,7 @@ public interface LifeCycleManager {
      *
      * @return the Association instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Association createAssociation(
     RegistryObject targetObject,
@@ -256,7 +256,7 @@ public interface LifeCycleManager {
      *
      * @return the Classification instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Classification createClassification(
     ClassificationScheme scheme,
@@ -277,7 +277,7 @@ public interface LifeCycleManager {
      *
      * @return the Classification instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Classification createClassification(
     ClassificationScheme scheme,
@@ -296,7 +296,7 @@ public interface LifeCycleManager {
      *
      * @return the Classification instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the Concept is not under
      * a ClassificationScheme
      */
@@ -314,7 +314,7 @@ public interface LifeCycleManager {
      *
      * @return the ClassificationScheme instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the request was invalid
      */
     public ClassificationScheme createClassificationScheme(
@@ -332,7 +332,7 @@ public interface LifeCycleManager {
      *
      * @return the ClassificationScheme instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the request was invalid
      */
     public ClassificationScheme createClassificationScheme(
@@ -364,7 +364,7 @@ public interface LifeCycleManager {
      *
      * @return the ClassificationScheme instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      * @throws InvalidRequestException if the Concept has a parent Concept
      * or is under a ClassificationScheme
      *
@@ -386,7 +386,7 @@ public interface LifeCycleManager {
      *
      * @return the Concept instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Concept createConcept(
     RegistryObject parent,
@@ -406,7 +406,7 @@ public interface LifeCycleManager {
      *
      * @return the Concept instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Concept createConcept(
     RegistryObject parent,
@@ -425,7 +425,7 @@ public interface LifeCycleManager {
      *
      * @return the EmailAddress instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public EmailAddress createEmailAddress(
     String address
@@ -443,7 +443,7 @@ public interface LifeCycleManager {
      *
      * @return the EmailAddress instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public EmailAddress createEmailAddress(
     String address,
@@ -463,7 +463,7 @@ public interface LifeCycleManager {
      *
      * @return the ExternalIdentifier instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public ExternalIdentifier createExternalIdentifier(
     ClassificationScheme identificationScheme,
@@ -484,7 +484,7 @@ public interface LifeCycleManager {
      *
      * @return the ExternalIdentifier instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public ExternalIdentifier createExternalIdentifier(
     ClassificationScheme identificationScheme,
@@ -503,7 +503,7 @@ public interface LifeCycleManager {
      *
      * @return the ExternalLink instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      */
     public ExternalLink createExternalLink(
@@ -522,7 +522,7 @@ public interface LifeCycleManager {
      *
      * @return the ExternalLink instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      */
     public ExternalLink createExternalLink(
@@ -541,7 +541,7 @@ public interface LifeCycleManager {
      *
      * @return the ExtrinsicObject instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      */
     public ExtrinsicObject createExtrinsicObject(
@@ -555,7 +555,7 @@ public interface LifeCycleManager {
      *
      * @return the InternationalString instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public InternationalString createInternationalString(
     ) throws JAXRException;
@@ -570,7 +570,7 @@ public interface LifeCycleManager {
      *
      * @return the InternationalString instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public InternationalString createInternationalString(
     String s
@@ -588,7 +588,7 @@ public interface LifeCycleManager {
      *
      * @return the InternationalString instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public InternationalString createInternationalString(
     Locale l,
@@ -604,7 +604,7 @@ public interface LifeCycleManager {
      *
      * @return the Key instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Key createKey(
     String id
@@ -621,7 +621,7 @@ public interface LifeCycleManager {
      *
      * @return the LocalizedString instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public LocalizedString createLocalizedString(
     Locale l,
@@ -641,7 +641,7 @@ public interface LifeCycleManager {
      *
      * @return the LocalizedString instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public LocalizedString createLocalizedString(
     Locale l,
@@ -659,7 +659,7 @@ public interface LifeCycleManager {
      *
      * @return the Organization instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Organization createOrganization(
     String name
@@ -676,7 +676,7 @@ public interface LifeCycleManager {
      *
      * @return the Organization instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Organization createOrganization(
     InternationalString name
@@ -696,7 +696,7 @@ public interface LifeCycleManager {
      *
      * @return the PersonName instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public PersonName createPersonName(
     String firstName,
@@ -714,7 +714,7 @@ public interface LifeCycleManager {
      *
      * @return the PersonName instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      */
     public PersonName createPersonName(
@@ -738,7 +738,7 @@ public interface LifeCycleManager {
      *
      * @return the PostalAddress instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public PostalAddress createPostalAddress(
     String streetNumber,
@@ -760,7 +760,7 @@ public interface LifeCycleManager {
      *
      * @return the RegistryPackage instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public RegistryPackage createRegistryPackage(
     String name
@@ -776,7 +776,7 @@ public interface LifeCycleManager {
      *
      * @return the RegistryPackage instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public RegistryPackage createRegistryPackage(
     InternationalString name
@@ -792,7 +792,7 @@ public interface LifeCycleManager {
      *
      * @return the Service instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Service createService(
     String name
@@ -810,7 +810,7 @@ public interface LifeCycleManager {
      *
      * @return the Service instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Service createService(
     InternationalString name
@@ -823,7 +823,7 @@ public interface LifeCycleManager {
      *
      * @return the ServiceBinding instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public ServiceBinding createServiceBinding(
     ) throws JAXRException;
@@ -841,7 +841,7 @@ public interface LifeCycleManager {
      *
      * @return the Slot instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Slot createSlot(
     String name,
@@ -861,7 +861,7 @@ public interface LifeCycleManager {
      *
      * @return the Slot instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public Slot createSlot(
     String name,
@@ -877,7 +877,7 @@ public interface LifeCycleManager {
      *
      * @return the SpecificationLink instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public SpecificationLink createSpecificationLink(
     ) throws JAXRException;
@@ -889,7 +889,7 @@ public interface LifeCycleManager {
      *
      * @return the TelephoneNumber instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public TelephoneNumber createTelephoneNumber(
     ) throws JAXRException;
@@ -901,7 +901,7 @@ public interface LifeCycleManager {
      *
      * @return the User instance created
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     public User createUser(
     ) throws JAXRException;
@@ -920,7 +920,7 @@ public interface LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * saved successfully and any SaveException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse saveObjects(Collection objects) throws JAXRException;
 
@@ -936,7 +936,7 @@ public interface LifeCycleManager {
     /**
      * Deprecates one or more previously submitted objects. Deprecation marks an
      * object as "soon to be deleted".
-     * Once an object is deprecated, the JAXR provider must not allow any new references (e.g. new Associations, Classifications and ExternalLinks) to that object to be submitted. If a client makes an API call that results in a new reference to a deprecated object, the JAXR provider must throw a java.lang.IllegalStateException within a JAXRException. However, existing references to a deprecated object continue to function normally.
+     * Once an object is deprecated, the Jakarta XML Registries provider must not allow any new references (e.g. new Associations, Classifications and ExternalLinks) to that object to be submitted. If a client makes an API call that results in a new reference to a deprecated object, the Jakarta XML Registries provider must throw a java.lang.IllegalStateException within a JAXRException. However, existing references to a deprecated object continue to function normally.
      *
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
@@ -945,7 +945,7 @@ public interface LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deprecated successfully and any JAXRException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deprecateObjects(Collection keys) throws JAXRException;
 
@@ -953,7 +953,7 @@ public interface LifeCycleManager {
      * Undeprecates one or more previously deprecated objects. If an object
      * was not previously deprecated, it is not an error, and no exception
      * is thrown.
-     * Once an object is undeprecated, the JAXR provider must again allow new references (e.g. new Associations, Classifications and ExternalLinks) to that object to be submitted.
+     * Once an object is undeprecated, the Jakarta XML Registries provider must again allow new references (e.g. new Associations, Classifications and ExternalLinks) to that object to be submitted.
      *
      * <DL><DT><B>Capability Level: 1 </B></DL>
      *
@@ -962,7 +962,7 @@ public interface LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deprecated successfully and any JAXRException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse unDeprecateObjects(Collection keys) throws JAXRException;
 
@@ -977,7 +977,7 @@ public interface LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteObjects(Collection keys) throws JAXRException;
 
@@ -993,7 +993,7 @@ public interface LifeCycleManager {
      * @return a BulkResponse containing the Collection of keys for those objects that were
      * deleted successfully and any DeleteException that was encountered in case of partial commit
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      */
     BulkResponse deleteObjects(Collection keys, String objectType) throws JAXRException;
 
@@ -1004,7 +1004,7 @@ public interface LifeCycleManager {
      *
      * @return the parent RegistryService
      *
-     * @throws JAXRException if the JAXR provider encounters an internal error
+     * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.RegistryService
      */

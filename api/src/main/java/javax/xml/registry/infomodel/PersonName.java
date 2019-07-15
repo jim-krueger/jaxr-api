@@ -32,7 +32,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the person's last name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getLastName() throws JAXRException;
@@ -43,7 +43,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param lastName	 the person's last name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setLastName(String lastName) throws JAXRException;
@@ -55,7 +55,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the person's first name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getFirstName() throws JAXRException;
@@ -66,7 +66,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param firstName the person's first name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setFirstName(String firstName) throws JAXRException;
@@ -79,7 +79,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @return the person's middle name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getMiddleName() throws JAXRException;
@@ -90,7 +90,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 1 </B></DL>
 	 *
 	 * @param middleName the person's middle name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setMiddleName(String middleName) throws JAXRException;
@@ -103,7 +103,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the person's full name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public String getFullName() throws JAXRException;
@@ -114,7 +114,7 @@ public interface PersonName {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param fullName	the person's full name
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setFullName(String fullName) throws JAXRException;

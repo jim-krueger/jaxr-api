@@ -45,7 +45,7 @@ public interface ExternalLink extends RegistryObject, URIValidator {
      *
      * @return Collection of RegistryObjects. Return an empty Collection if no RegistryObjects
      * are annotated by this object.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getLinkedObjects() throws JAXRException;
@@ -57,7 +57,7 @@ public interface ExternalLink extends RegistryObject, URIValidator {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return	the URI String for this object (e.g. "http://java.sun.com")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     String getExternalURI() throws JAXRException;
@@ -68,7 +68,7 @@ public interface ExternalLink extends RegistryObject, URIValidator {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param uri	the URI String for this object (e.g. "http://java.sun.com")
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setExternalURI(String uri) throws JAXRException;

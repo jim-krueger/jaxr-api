@@ -22,8 +22,8 @@ import java.util.*;
 
 
 /**
- * This class represents a connection between a JAXR client and a
- * JAXR provider.
+ * This class represents a connection between a Jakarta XML Registries client and a
+ * Jakarta XML Registries provider.
  *
  * @see ConnectionFactory
  * @author Farrukh S. Najmi
@@ -39,7 +39,7 @@ public interface Connection {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the RegistryService associated with this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see RegistryService
      */
@@ -54,7 +54,7 @@ public interface Connection {
      *
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void close() throws JAXRException;
@@ -65,47 +65,47 @@ public interface Connection {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if Connection is closed; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	boolean isClosed() throws JAXRException;
 
 	/**
-	 * Indicates whether a client uses synchronous communication with JAXR provider or not.
-	 * A JAXR provider must support both modes
-	 * of communication. A JAXR client can choose which mode it wants to use.
+	 * Indicates whether a client uses synchronous communication with Jakarta XML Registries provider or not.
+	 * A Jakarta XML Registries provider must support both modes
+	 * of communication. A Jakarta XML Registries client can choose which mode it wants to use.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if Connection is synchronous (default); <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public boolean isSynchronous() throws JAXRException;
 
 	/**
 	 * Sets whether the client uses synchronous communication or not.
-	 * A JAXR client may dynamically change its communication style
+	 * A Jakarta XML Registries client may dynamically change its communication style
 	 * preference.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param sync	<code>true</code> if Connection is desired to be synchronous; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setSynchronous(boolean sync) throws JAXRException;
 
 	/**
-	 * Sets the Credentials associated with this client. The credentials is used to authenticate the client with the JAXR provider.
-	 * A JAXR client may dynamically change its identity by changing
+	 * Sets the Credentials associated with this client. The credentials is used to authenticate the client with the Jakarta XML Registries provider.
+	 * A Jakarta XML Registries client may dynamically change its identity by changing
 	 * the credentials associated with it.
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 *
 	 * @param credentials	a Collection oj java.lang.Objects which provide identity related information for the caller.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	public void setCredentials(Set credentials) throws JAXRException;
@@ -116,7 +116,7 @@ public interface Connection {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return Set of java.lang.Object instances. The Collection may be empty but not null.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 *
 	 */

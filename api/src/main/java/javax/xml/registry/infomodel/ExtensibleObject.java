@@ -35,7 +35,7 @@ public interface ExtensibleObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param slot	the Slot object being added to this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addSlot(Slot slot) throws JAXRException;
@@ -47,7 +47,7 @@ public interface ExtensibleObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param slots	the Collection of Slot objects being added to this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see Slot
      */
@@ -59,7 +59,7 @@ public interface ExtensibleObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param slotName	the name for the Slot object being removed from this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeSlot(String slotName) throws JAXRException;
@@ -70,7 +70,7 @@ public interface ExtensibleObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param slotNames	the Collection of names for Slot objects being removed from this object. Must be a Collection of Strings
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see Slot
      */
@@ -83,7 +83,7 @@ public interface ExtensibleObject {
 	 *
 	 * @param slotName the name of the desired Slot object
      * @return Slot object retrieved
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	Slot getSlot(String slotName) throws JAXRException;
@@ -94,7 +94,7 @@ public interface ExtensibleObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return Collection of Slot instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see Slot
      */

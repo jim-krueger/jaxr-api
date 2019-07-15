@@ -44,7 +44,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return	the value (usually a taxonomy value) associated with this Concept
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	String getValue() throws JAXRException;
@@ -55,7 +55,7 @@ public interface Concept extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param value	the value (usually a taxonomy value) associated with this Concept
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setValue(String value) throws JAXRException;
@@ -66,7 +66,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concept	the concept being added as a child of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildConcept(Concept concept) throws JAXRException;
@@ -77,7 +77,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concepts	the Collection of Concepts being added as a children of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addChildConcepts(Collection concepts) throws JAXRException;
@@ -88,7 +88,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concept	the concept being removed as a child Concept of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildConcept(Concept concept) throws JAXRException;
@@ -99,7 +99,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concepts	the Collection of Concepts being removed as children Concepts of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeChildConcepts(Collection concepts) throws JAXRException;
@@ -110,7 +110,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the number of children Concepts
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     int getChildConceptCount() throws JAXRException;
@@ -122,7 +122,7 @@ public interface Concept extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.Concept
      * @return Collection of Concept instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getChildrenConcepts() throws JAXRException;
@@ -134,7 +134,7 @@ public interface Concept extends RegistryObject {
      *
      * @see javax.xml.registry.infomodel.Concept
      * @return Collection of Concept instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      *
      */
@@ -148,7 +148,7 @@ public interface Concept extends RegistryObject {
 	 *
 	 *
 	 * @return the Concept that is the parent of this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 * @see javax.xml.registry.infomodel.Concept
 	 */
@@ -161,7 +161,7 @@ public interface Concept extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @return the ClassificationScheme that is the ancestor of this object. May return null
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see javax.xml.registry.infomodel.ClassificationScheme
      */
@@ -175,7 +175,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the canonical path String representing this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	String getPath() throws JAXRException;
@@ -187,7 +187,7 @@ public interface Concept extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the parent Concept or ClassificationScheme for this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	RegistryObject getParent() throws JAXRException;

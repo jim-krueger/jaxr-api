@@ -17,9 +17,9 @@
 package javax.xml.registry;
 
 /**
- * This exception must be thrown when a JAXR client attempts to invoke an API method
+ * This exception must be thrown when a Jakarta XML Registries client attempts to invoke an API method
  * that is not supported by the capability profile that is supported by the
- * JAXR provider.
+ * Jakarta XML Registries provider.
  *
  * @see RegistryService
  * @author Farrukh S. Najmi

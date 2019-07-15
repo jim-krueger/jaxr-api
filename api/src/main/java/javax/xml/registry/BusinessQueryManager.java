@@ -48,7 +48,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of Associations
          *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findAssociations(
 		Collection findQualifiers,
@@ -77,7 +77,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of Associations
          *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findCallerAssociations(
 		Collection findQualifiers,
@@ -138,7 +138,7 @@ public interface BusinessQueryManager extends QueryManager {
          *
 	 * @return a BulkResponse containing a Collection of Organizations
          *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findOrganizations(
 		Collection findQualifiers,
@@ -187,7 +187,7 @@ public interface BusinessQueryManager extends QueryManager {
          *
 	 * @return a BulkResponse containing a Collection of Services
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findServices(Key orgKey,
 		Collection findQualifiers,
@@ -229,7 +229,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of ServiceBindings
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findServiceBindings(
 		Key serviceKey,
@@ -271,7 +271,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of ClassificationSchemes
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findClassificationSchemes(
 		Collection findQualifiers,
@@ -297,7 +297,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 * @return the ClassificationScheme matching the namePattern, or null
 	 * if no match is found.
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal
          * error.  Throws an InvalidRequestException if multiple matches are
          * found.
 	 *
@@ -348,7 +348,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of Concepts
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findConcepts(
 		Collection findQualifiers,
@@ -366,11 +366,11 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
-	 * @param path a canonical path expression, as defined in the JAXR specification, that identifies the Concept.
+	 * @param path a canonical path expression, as defined in the Jakarta XML Registries specification, that identifies the Concept.
 	 *
 	 * @return the Concept found, or null if no match is found
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	Concept findConceptByPath(String path) throws JAXRException;
 
@@ -408,7 +408,7 @@ public interface BusinessQueryManager extends QueryManager {
 	 *
 	 * @return a BulkResponse containing a Collection of RegistryPackages
 	 *
-         * @throws JAXRException if the JAXR provider encounters an internal error
+         * @throws JAXRException if the Jakarta XML Registries provider encounters an internal error
 	 */
 	BulkResponse findRegistryPackages(
 		Collection findQualifiers,

@@ -17,7 +17,7 @@
 package javax.xml.registry;
 
 /**
- * This exception is thrown when a JAXR client attempts to invoke an API method
+ * This exception is thrown when a Jakarta XML Registries client attempts to invoke an API method
  * that is not valid for some reason.
  *
  *

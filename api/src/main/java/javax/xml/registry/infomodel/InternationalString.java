@@ -34,7 +34,7 @@ public interface InternationalString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the String value for the Locale returned by Locale.getDefault()
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     String getValue() throws JAXRException;
@@ -47,7 +47,7 @@ public interface InternationalString {
      *
 	 * @param locale	The Locale for the desired value
 	 * @return the String value for the specified Locale
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     String getValue(Locale locale) throws JAXRException;
@@ -58,7 +58,7 @@ public interface InternationalString {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param value	the String value for the Locale returned by Locale.getDefault()
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setValue(String value) throws JAXRException;
@@ -70,7 +70,7 @@ public interface InternationalString {
      *
 	 * @param locale	The locale for this value being set
 	 * @param value		The value being set
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setValue(Locale locale, String value) throws JAXRException;
@@ -81,7 +81,7 @@ public interface InternationalString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param localizedString	the LocalizedString being added to this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void addLocalizedString(LocalizedString localizedString) throws JAXRException;
@@ -93,7 +93,7 @@ public interface InternationalString {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @param localizedStrings	the Collection of LocalizedStrings being added to this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void addLocalizedStrings(Collection localizedStrings) throws JAXRException;
@@ -104,7 +104,7 @@ public interface InternationalString {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param localizedString	the LocalizedString being removed from this object
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void removeLocalizedString(LocalizedString localizedString) throws JAXRException;
@@ -115,7 +115,7 @@ public interface InternationalString {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param localizedStrings	the Collection of LocalizedStrings being removed from this object
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void removeLocalizedStrings(Collection localizedStrings) throws JAXRException;
@@ -128,7 +128,7 @@ public interface InternationalString {
 	 * @param locale	The loacle for the desired LocalizedStrings
 	 * @param charsetName	The character set name for the desired LocalizedStrings
 	 * @return the LocalizedString that matches specified locale and character set
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	LocalizedString getLocalizedString(Locale locale, String charsetName) throws JAXRException;
@@ -141,7 +141,7 @@ public interface InternationalString {
 	 *
      * @see javax.xml.registry.infomodel.LocalizedString
      * @return Collection of LocalizedString instances. The Collection may be empty but not null.
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Collection getLocalizedStrings() throws JAXRException;

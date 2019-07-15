@@ -31,18 +31,18 @@ import javax.xml.registry.*;
  * </center>
  *
  * <h2>Internal vs. External Taxonomies</h2>
- * A taxonomy may be represented within a JAXR provider in one of the following ways:
+ * A taxonomy may be represented within a Jakarta XML Registries provider in one of the following ways:
  *
  * <ol style='margin-top:0in' start=1 type=a>
  * <li>The taxonomy elements and their structural relationship with each other
- * are available within the JAXR provider. This case is referred to as <i>Internal
+ * are available within the Jakarta XML Registries provider. This case is referred to as <i>Internal
  * Taxonomy</i> since the structure of the taxonomy is available internal to the
- * JAXR provider.</li>
+ * Jakarta XML Registries provider.</li>
  *
  * <li>The taxonomy elements and their structural relationship with each other is
- * represented somewhere external to the JAXR provider. This case is
+ * represented somewhere external to the Jakarta XML Registries provider. This case is
  * referred to as <i>External Taxonomy</i> since the structure of the
- * taxonomy is not available to the JAXR provider.</li>
+ * taxonomy is not available to the Jakarta XML Registries provider.</li>
  * </ol>
  *
  * <h2>Internal vs. External Classifications</h2>
@@ -77,7 +77,7 @@ import javax.xml.registry.*;
  * When a Classification instance is used to classify a RegistryObject using an external taxonomy it is referred to as an external Classification. A client must call the setValue method on a Classification and define a unique value that logically represents a taxonomy element within the taxonomy whose structure is defined externally. It is necessary for the client call setClassificationScheme for external Classifications since there is no other way to infer the ClassificationScheme that represents the external taxonomy.
  *
  * <h3>Example of External Classification</h3>
- * Figure 3 shows an example of external classification. The example uses the same scenario where a Classification classifies an Organization instance as a Book Publisher using the NAICS standard taxonomy. However, this time the structure of the NAICS taxonomy is not available internally to the JAXR provider and consequently there is no Concept instance. Instead, the name and value attributes of the Classification are used to pinpoint the Book Publisher's taxonomy element. Note that name is optional but value is required.
+ * Figure 3 shows an example of external classification. The example uses the same scenario where a Classification classifies an Organization instance as a Book Publisher using the NAICS standard taxonomy. However, this time the structure of the NAICS taxonomy is not available internally to the Jakarta XML Registries provider and consequently there is no Concept instance. Instead, the name and value attributes of the Classification are used to pinpoint the Book Publisher's taxonomy element. Note that name is optional but value is required.
  *
  * <center><img SRC="{@docRoot}/resources/images/externalClassificationInstance.gif" ALT="Example of External Classification">
  * <br><b>Figure 3. Example of External Classification</b>
@@ -102,7 +102,7 @@ public interface Classification extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the Concept that is classifying the classified object. null if this is a external Classification
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     Concept getConcept() throws JAXRException;
@@ -116,7 +116,7 @@ public interface Classification extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param concept	the Concept that is classifying the classified object.
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setConcept(Concept concept) throws JAXRException;
@@ -131,7 +131,7 @@ public interface Classification extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
 	 * @return the ClassificationScheme used by this Classification
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      * @see ClassificationScheme
      */
@@ -147,7 +147,7 @@ public interface Classification extends RegistryObject {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param classificationScheme	the ClassificationScheme used by this Classification
-     * @throws JAXRException	If the JAXR provider encounters an internal error
+     * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */
     void setClassificationScheme(ClassificationScheme classificationScheme) throws JAXRException;
@@ -159,7 +159,7 @@ public interface Classification extends RegistryObject {
 	 *
 	 * @return	the value of the taxonomy element if external Classification; the value of the
 	 * 			Concept representing the taxonomy element if internal Classification
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public String getValue() throws JAXRException;
@@ -170,7 +170,7 @@ public interface Classification extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param value	the taxonomy value used by this external Classification
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     public void setValue(String value) throws JAXRException;
@@ -182,7 +182,7 @@ public interface Classification extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return the RegistryObject that is classified by this Classification
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     RegistryObject getClassifiedObject() throws JAXRException;
@@ -193,7 +193,7 @@ public interface Classification extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @param classifiedObject	the RegistryObject that is classified by this Classification
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
     void setClassifiedObject(RegistryObject classifiedObject) throws JAXRException;
@@ -204,7 +204,7 @@ public interface Classification extends RegistryObject {
 	 * <DL><DT><B>Capability Level: 0 </B></DL>
 	 *
 	 * @return <code>true</code> if this is an external Classification; <code>false</code> otherwise
-	 * @throws JAXRException	If the JAXR provider encounters an internal error
+	 * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
 	 *
 	 */
 	boolean isExternal() throws JAXRException;
