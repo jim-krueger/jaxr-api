@@ -26,12 +26,12 @@
         <version>1.0.5</version>
     </parent>
 
-    <groupId>org.eclipse.ee4j.xml.registry-api</groupId>
+    <groupId>jakarta.xml.registry-api</groupId>
     <artifactId>xml.registry-api-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.9-SNAPSHOT</version>
+    <version>1.0.10-SNAPSHOT</version>
     <name>jaxr-api</name>
-    <description>JAX R API: Eclipse Project for Stable EE4J APIs</description>
+    <description>Jakarta XML Registries API: Eclipse Project for Stable EE4J APIs</description>
     <url>https://github.com/eclipse-ee4jjaxr-api</url>
 
     <scm>
