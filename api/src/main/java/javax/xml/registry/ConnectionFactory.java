@@ -28,7 +28,7 @@ import java.io.*;
  * A ConnectionFactory object is registered with a naming service in a provider specific way, such as one based on the JNDI API. This registration associates the ConnectionFactory object with a logical name. When an application wants to establish a connection with the provider associated with that ConnectionFactory object, it does a lookup, providing the logical name. The application can then use the ConnectionFactory object that is returned to create a connection to the messaging provider.
  *
  * <h2>Looking Up a ConnectionFactory Without Using the JNDI API</h2>
- * The Jakarta XML Registries provides an alternative way to look up a JAXR ConnectionFactory that does not require the use of the JNDI API. This is done using the newInstance static method on the abstract class ConnectionFactory provided in the JAXR API. The newInstance method returns a JAXR ConnectionFactory. The client may indicate which factory class should be instantiated by the newInstance method by defining the system property javax.xml.registry.ConnectionFactoryClass.
+ * The Jakarta XML Registries provides an alternative way to look up a Jakarta XML Registries ConnectionFactory that does not require the use of the JNDI API. This is done using the newInstance static method on the abstract class ConnectionFactory provided in the Jakarta XML Registries API. The newInstance method returns a Jakarta XML Registries ConnectionFactory. The client may indicate which factory class should be instantiated by the newInstance method by defining the system property javax.xml.registry.ConnectionFactoryClass.
  * If this property is not set, the Jakarta XML Registries provider must return a default ConnectionFactory instance.
  *
  *
@@ -55,7 +55,7 @@ public abstract class ConnectionFactory {
      * <DL><DT><B>Capability Level: 0 </B></DL>
      *
      * @param properties configuration properties that are either
-     * 	specified by JAXR specification or are provider specific.
+     * 	specified by Jakarta XML Registries specification or are provider specific.
      * @throws JAXRException	If the Jakarta XML Registries provider encounters an internal error
      *
      */

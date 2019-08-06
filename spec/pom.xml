@@ -18,9 +18,9 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.eclipse.ee4j.xml.registry-api</groupId>
+        <groupId>jakarta.xml.registry-api</groupId>
         <artifactId>xml.registry-api-parent</artifactId>
-        <version>1.0.9-SNAPSHOT</version>
+        <version>1.0.10-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>jakarta.xml.registry</groupId>
@@ -95,7 +95,7 @@
                         </goals>
                         <configuration>
                             <backend>html5</backend>
-                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${project.version}.html</outputFile>
+                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${spec.version}.html</outputFile>
                             <attributes>
                                 <doctype>book</doctype>
                                 <status>${status}</status>
@@ -118,7 +118,7 @@
                         </goals>
                         <configuration>
                             <backend>pdf</backend>
-                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${project.version}.pdf</outputFile>
+                            <outputFile>${project.build.directory}/generated-docs/xml-registries-spec-${spec.version}.pdf</outputFile>
                             <attributes>
                                 <pdf-stylesdir>${project.basedir}/src/main/theme</pdf-stylesdir>
                                 <pdf-style>jakartaee</pdf-style>

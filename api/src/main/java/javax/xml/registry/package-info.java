@@ -26,7 +26,7 @@
  * <br><b>Figure 1. Primary Interfaces in the Jakarta XML Registries API</b>
  * </center>
  *
- * <p>Figure 2 shows the response and exception classes in the JAXR API.</p>
+ * <p>Figure 2 shows the response and exception classes in the Jakarta XML Registries API.</p>
  *
  * <center><img SRC="{@docRoot}/resources/images/responsesAndException.gif" ALT="Response and Exception Classes in the Jakarta XML Registries API">
  * <br><b>Figure 2.  Response and Exception Classes in the Jakarta XML Registries API</b>
