@@ -254,10 +254,24 @@
                 </configuration>
                 <executions>
                     <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                    <execution>
                         <phase>javadoc</phase>
                         <goals>
                             <goal>javadoc</goal>
                         </goals>
+                        <configuration>
+                            <groups>
+                                <group>
+                                    <title>XML Registries API Documentation</title>
+                                    <packages>javax.xml.registry</packages>
+                                </group>
+                            </groups>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
