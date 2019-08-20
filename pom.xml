@@ -26,7 +26,7 @@
         <version>1.0.5</version>
     </parent>
 
-    <groupId>jakarta.xml.registry-api</groupId>
+    <groupId>jakarta.xml.registry</groupId>
     <artifactId>xml.registry-api-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.10-SNAPSHOT</version>
